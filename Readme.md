@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Жилин](https://up.htmlacademy.ru/adaptive/20/user/693273).
-* Наставник: `Неизвестно`.
+* Наставник: [Елизавета Цыгвинцева](https://htmlacademy.ru/profile/ijwby).
 
 ---
 
