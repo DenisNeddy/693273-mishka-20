@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+   <header class="header">
+     <a class="header__logo logo">
+       <img src="https://via.placeholder.com/" width="150" height="150" alt="Логотип компании Мишка">
+     </a>
+     <nav class="header__navigation site-navigation">
+       <button class="site-navigation__toggle" type="button">
+         <span class="visually-hidden">Открыть меню</span>
+       </button>
+       <div class="site-navigation__catalog catalog">
+         <a href="href" class="catalog__list">Каталог товаров</a>
+       </div>
+       <div class="site-navigation__custom custom-order">
+         <a class="custom-order__link" href="#">Вязание на заказ</a>
+       </div>
+       <div class="site-navigation__search site-search">
+         <form action="https://echo.htmlacademy.ru" method="get" class="site-search__form">
+           <label class="site-search__label">
+             <span class="visually-hidden">Поиск</span>
+             <input class="site-search__input" type="search" name="search-field" placeholder="Поиск">
+           </label>
+           <button class="site-search__button" type="submit">
+            <span class="visually-hidden">Поиск
+            </span>
+           </button>
+         </form>
+       </div>
+       <div class="site-navigation__shop shop-basket">
+         <a href="#" class="shop-basket__link">
+           Корзина:<span class="shop-basket__value">
+             пока пуста
+           </span>
+         </a>
+       </div>
+     </nav>
+   </header>
+   <main class="page-main"></main>
+   <footer class="footer"></footer>
   </body>
 </html>
