@@ -66,9 +66,11 @@
            <dt class="cart-property__title">Высота:</dt>
            <dd class="cart-property__description">15 см</dd>
          </dl>
-         <img class="product-cart__image" src="https://via.placeholder.com" width="200" height="315" alt="фотография вязанных корзин">
+         <a href="#">
+           <img class="product-cart__image" src="https://via.placeholder.com" width="200" height="315" alt="фотография вязанных корзин">
+         </a>
          <span class="product-cart__price">Цена: 990 руб.</span>
-         <a href="#" class="product-cart__button">Заказать</a>
+         <a href="#" class="product-cart__button button">Заказать</a>
        </article>
      </section>
      <section class="page-main__about about">
@@ -109,7 +111,7 @@
             <button type="button" class="reviews__pagination reviews__pagination--next">
               <span class="visually-hidden">Вперед</span>
             </button>
-            <a href="#" class="reviews__button">Написать</a>
+            <a href="#" class="reviews__button button">Написать</a>
            </blockquote>
          </li>
        </ul>
@@ -127,7 +129,7 @@
          </dd>
        </dl>
        <img class="contacts__map" src="https://via.placeholder.com/" width="322" height="457" alt="Карта с адресом нашей компании">
-       <a href="#" class="contacts__button">Напишите нам</a>
+       <a href="#" class="contacts__button button">Напишите нам</a>
      </section>
    </main>
    <footer class="footer">
@@ -150,10 +152,29 @@
      </ul>
      <span class="footer__creators creators">
        Разработано
-       <a href="#" class="creators__logo">
+       <a href="https://htmlacademy.ru/intensive/adaptive" class="creators__logo">
          <img src="https://via.placeholder.com/" width="27" height="34" alt="Логотип компании htmlacademy">
        </a>
      </span>
    </footer>
+   <section class="page-main__modal modal-basket">
+     <h2 class="modal-basket__title">
+     <span class="modal-basket__description">
+       Выберите размер:
+     </span>
+       <ul class="modal-basket__size-list">
+         <li class="modal-basket__size-item">
+           <button type="button" class="modal-basket__size-button modal-basket__size-button--active" aria-label="Размер S">S</button>
+         </li>
+         <li class="modal-basket__size-item">
+           <button type="button" class="modal-basket__size-button" aria-label="Размер M">M</button>
+         </li>
+         <li class="modal-basket__size-item">
+           <button type="button" class="modal-basket__size-button" aria-label="Размер L">L</button>
+         </li>
+       </ul>
+       <button type="button" class="modal-basket__button button">Добавить</button>
+     </h2>
+   </section>
   </body>
 </html>
