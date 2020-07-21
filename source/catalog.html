@@ -5,43 +5,47 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
+
    <header class="header">
-     <a href="index.html" class="header__logo logo">
+     <a href="index.html" class="header__logo logo" aria-label="Переход на главную страницу">
        <img src="https://via.placeholder.com/" width="150" height="150" alt="Логотип компании Мишка">
      </a>
-     <nav class="header__navigation site-navigation">
-       <button class="site-navigation__toggle" type="button">
+     <nav class="main-nav">
+       <button class="main-nav__toggle" type="button">
          <span class="visually-hidden">Открыть меню</span>
        </button>
-       <div class="site-navigation__catalog catalog">
-         <a href="href" class="catalog__list">Каталог товаров</a>
-       </div>
-       <div class="site-navigation__custom custom-order">
-         <a class="custom-order__link" href="#">Вязание на заказ</a>
-       </div>
-       <div class="site-navigation__search site-search">
-         <form action="https://echo.htmlacademy.ru" method="get" class="site-search__form">
-           <label class="site-search__label">
+       <ul class="main-nav__list site-list">
+         <li class="site-list__item">
+           <a href="catalog.html" class="site-list__link">Каталог товаров</a>
+         </li>
+         <li class="site-list__item">
+           <a href="form.html" class="site-list__link">Вязание на заказ</a>
+         </li>
+       </ul>
+       <ul class="main-nav__list user-list">
+         <form action="https://echo.htmlacademy.ru" method="get" class="user-list__form">
+           <label class="user-list__label">
              <span class="visually-hidden">Поиск</span>
-             <input class="site-search__input" type="search" name="search-field" placeholder="Поиск">
+             <input class="user-list__input" type="search" name="search-field" placeholder="Поиск">
            </label>
-           <button class="site-search__button" type="submit">
+           <button class="user-list__form-button" type="submit">
             <span class="visually-hidden">Поиск
             </span>
            </button>
          </form>
-       </div>
-       <div class="site-navigation__shop shop-basket">
-         <a href="#" class="shop-basket__link">
-           Корзина:<span class="shop-basket__value">
-             пока пуста
-           </span>
-         </a>
-       </div>
+         <div class="user-list__shop-basket">
+           <a href="#" class="user-list__link">
+             Корзина:<span class="user-list__basket-value">
+               пока пуста
+             </span>
+           </a>
+         </div>
+       </ul>
      </nav>
    </header>
+
    <main class="page-inner">
-     <h1 class="page-inner__main-title">Каталог товаров</h1>
+     <h1 class="page-inner__main-title inner-title">Каталог товаров</h1>
      <section class="page-inner__catalog catalog">
        <h2 class="visually-hidden">Товары магазина Мишка</h2>
        <ul class="catalog__list">
@@ -55,8 +59,8 @@
              </h3>
              <span class="product-cart__property">Рост 30 см, вес 200 г</span>
              <span class="product-cart__price">1200 руб.</span>
-             <button class="product-cart__buy" type="button" aria-label="Заказать">
-             </button>
+             <a class="product-cart__buy" type="button" aria-label="Заказать">
+             </a>
            </article>
          </li>
          <li class="catalog__item">
@@ -69,8 +73,8 @@
              </h3>
              <span class="product-cart__property">Диаметр 15 см, высота 10 см</span>
              <span class="product-cart__price">690 руб.</span>
-             <button class="product-cart__buy" type="button" aria-label="Заказать">
-             </button>
+             <a class="product-cart__buy" type="button" aria-label="Заказать">
+             </a>
            </article>
          </li>
          <li class="catalog__item">
@@ -83,8 +87,8 @@
              </h3>
              <span class="product-cart__property">Диаметр 30 см, высота 30 см</span>
              <span class="product-cart__price">1500 руб.</span>
-             <button class="product-cart__buy" type="button" aria-label="Заказать">
-             </button>
+             <a class="product-cart__buy" type="button" aria-label="Заказать">
+             </a>
            </article>
          </li>
        </ul>
@@ -99,19 +103,20 @@
        </article>
      </section>
    </main>
+
    <footer class="footer">
      <ul class="footer__social social-list">
-       <li class="social-item">
+       <li class="social-list__item">
          <a href="#" class="social__link social__link--instagram">
            <span class="visually-hidden">Instagram</span>
          </a>
        </li>
-       <li class="social-item">
+       <li class="social-list__item">
          <a href="#" class="social__link social__link--facebook">
            <span class="visually-hidden">Facebook</span>
          </a>
        </li>
-       <li class="social-item">
+       <li class="social-list__item">
          <a href="#" class="social__link social__link--twitter">
            <span class="visually-hidden">Twitter</span>
          </a>
@@ -119,10 +124,11 @@
      </ul>
      <span class="footer__creators creators">
        Разработано
-       <a href="https://htmlacademy.ru/intensive/adaptive" class="creators__logo">
+       <a href="https://htmlacademy.ru/intensive/adaptive" class="creators__logo" aria-label="Переход на сайт htmlacademy">
          <img src="https://via.placeholder.com/" width="27" height="34" alt="Логотип компании htmlacademy">
        </a>
      </span>
    </footer>
+
   </body>
 </html>
