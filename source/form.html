@@ -21,7 +21,7 @@
             <a class="site-list__link">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <div class="main-nav__list user-list">
           <form action="https://echo.htmlacademy.ru" method="get" class="user-list__form">
             <label class="user-list__label">
               <span class="visually-hidden">Поиск</span>
@@ -37,7 +37,7 @@
               Корзина:<span class="user-list__basket-value">пока пуста</span>
             </a>
           </div>
-        </ul>
+        </div>
       </nav>
     </header>
     <main class="page-form">
@@ -48,7 +48,7 @@
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Тип</legend>
           <label class="order-form__label" for="radio-accessory">
-           Аксессуар для  интерьера
+            Аксессуар для  интерьера
           </label>
           <input class="order-form__radio" type="radio" name="choice-category" id="radio-accessory" value="accessory for the interior" checked>
           <label class="order-form__label" for="radio-toy">
@@ -122,12 +122,11 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Доп</legend>
-          <textarea class="order-form__textarea" name="textarea-field">
-            Опишите все ваши пожелания к заказу
+          <textarea class="order-form__textarea" name="textarea-field" placeholder="Опишите все ваши  пожелания к заказу">
           </textarea>
         </fieldset>
         <span class="order-form__reminder">
-          *Поля обязательны для заполнения
+          <sup>*</sup>Поля обязательны для заполнения
         </span>
         <button class="order-form__button button" type="submit">Отправить заказ</button>
       </form>
