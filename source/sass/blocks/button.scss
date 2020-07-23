@@ -1,0 +1,12 @@
+.button {
+  padding: 16px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basicDark);
+
+  background-color: var(--basicWhite);
+  border: 2px solid var(--basicDark);
+}
