@@ -1,1 +1,32 @@
-.popular {}
+.popular__list {
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular__title {
+  display: inline-block;
+
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+
+  width: 100%;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basicWhite);
+  vertical-align: center;
+
+  background-color: var(--basicGreen);
+}
+
+.popular__item:last-child .popular__title {
+  background-color: var(--basicGreenDark);
+}
+
+
+
+

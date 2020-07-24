@@ -1,0 +1,35 @@
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basicBlack);
+}
+
+.contacts__list {
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--basicDark);
+}
+
+.contacts__list-description {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__list-email {
+display: inline-block;
+
+padding-bottom: 1px;
+
+font-size: 15px;
+line-height: 30px;
+color: var(--basicDark);
+vertical-align: center;
+border-bottom: 1px solid var(--basicGreen);
+}
+
+
+.contacts__button {
+  padding-left: 37px;
+  padding-right: 38px;
+}
