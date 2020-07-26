@@ -33,6 +33,12 @@
 }
 
 .product-cart__button {
-  padding-left: 100px;
-  padding-right: 100px;
+  display: inline-block;
+
+  width: 100%;
+
+  text-align: center;
+  vertical-align: middle;
+
+  box-sizing: border-box;
 }

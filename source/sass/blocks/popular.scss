@@ -21,6 +21,8 @@
   vertical-align: center;
 
   background-color: var(--basicGreen);
+
+  box-sizing: border-box;
 }
 
 .popular__item:last-child .popular__title {

@@ -1,0 +1,65 @@
+.modal-basket {
+  background-color: var(--basicWhite);
+}
+
+.modal-basket__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basicBlack);
+}
+
+.modal-basket__description {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal-basket__size-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal-basket__size-item {
+  margin-right: 7px;
+}
+
+.modal-basket__size-item:last-child {
+  margin-right: 0;
+}
+
+.modal-basket__size-button {
+  width: 80px;
+  height: 50px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basicDark);
+
+  background-color: var(--basicWhite);
+  border: 2px solid var(--opacityDark01);
+  &--active {
+    border-color: var(--basicGreen);
+  }
+}
+
+
+
+.modal-basket__button {
+  display: inline-block;
+
+  width: 100%;
+
+  vertical-align: middle;
+  text-align: center;
+
+  color: var(--basicWhite);
+
+  background-color: var(--basicGreen);
+  border-color: var(--basicGreen);
+}

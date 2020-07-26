@@ -30,6 +30,12 @@ border-bottom: 1px solid var(--basicGreen);
 
 
 .contacts__button {
-  padding-left: 37px;
-  padding-right: 38px;
+  display: inline-block;
+
+  width: 100%;
+
+  vertical-align: middle;
+  text-align: center;
+
+  box-sizing: border-box;
 }

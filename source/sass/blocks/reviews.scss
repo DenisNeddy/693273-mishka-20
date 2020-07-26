@@ -35,6 +35,12 @@
   color: var(--basicDark);
 }
 .reviews__button {
-  padding-left: 66px;
-  padding-right: 65px;
+  display: inline-block;
+
+  width: 100%;
+
+  vertical-align: middle;
+  text-align: center;
+
+  box-sizing: border-box;
 }
