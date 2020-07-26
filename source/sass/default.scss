@@ -15,6 +15,12 @@ url('../fonts/opensansbold.woff2') format('woff2'),
 url('../fonts/opensansbold.woff') format('woff');
 }
 
+html {
+  /*временно*/
+
+  background-color: var(--opacityBlack03);
+}
+
 body {
   font-size: 15px;
   line-height: 30px;
@@ -23,6 +29,10 @@ body {
   color: var(--basicDark);
 
   background-color: var(--basicWhite);
+
+  /*Временный стили*/
+  margin: 0 auto;
+  width: 320px;
 }
 
 a {

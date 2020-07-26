@@ -2,6 +2,8 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
@@ -27,10 +29,6 @@
               <span class="visually-hidden">Поиск</span>
               <input class="user-list__input" type="search" name="search-field" placeholder="Поиск">
             </label>
-            <button class="user-list__form-button" type="submit">
-              <span class="visually-hidden">Поиск
-              </span>
-            </button>
           </form>
           <div class="user-list__shop-basket">
             <a href="#" class="user-list__link">
@@ -47,41 +45,41 @@
       <form class="page-form__content order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Тип</legend>
-          <label class="order-form__label" for="radio-accessory">
-            Аксессуар для  интерьера
-          </label>
           <input class="order-form__radio" type="radio" name="choice-category" id="radio-accessory" value="accessory for the interior" checked>
+          <label class="order-form__label" for="radio-accessory">
+            Аксессуары для интерьера
+          </label>
+          <input class="order-form__radio" type="radio" name="choice-category" id="radio-toy" value="children-toy">
           <label class="order-form__label" for="radio-toy">
             Детская игрушка
           </label>
-          <input class="order-form__radio" type="radio" name="choice-category" id="radio-toy" value="children-toy">
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Цвет</legend>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-white" checked>
           <label class="order-form__label" for="color-white">
             Белый
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-white" checked>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-grey" checked>
           <label class="order-form__label" for="color-grey">
             Серый
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-grey" checked>
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-tiffany">
           <label class="order-form__label" for="color-tiffany">
             «Тиффани»
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-tiffany">
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-black">
           <label class="order-form__label" for="color-black">
             Черный
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-black">
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-pink">
           <label class="order-form__label" for="color-pink">
             Розовый
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-pink">
+          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-orange">
           <label class="order-form__label" for="color-orange">
             Оранжевый
           </label>
-          <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-orange">
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">ФИО</legend>
@@ -122,7 +120,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <legend class="order-form__legend">Доп</legend>
-          <textarea class="order-form__textarea" name="textarea-field" placeholder="Опишите все ваши  пожелания к заказу">
+          <textarea class="order-form__textarea" name="textarea-field" placeholder="Опишите все ваши пожелания к заказу" rows="7">
           </textarea>
         </fieldset>
         <span class="order-form__reminder">
