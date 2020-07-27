@@ -2,7 +2,8 @@
   position: relative;
 
   border: none;
-  &::after {
+
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -40,10 +41,11 @@
 .order-form__phone-input,
 .order-form__email-input {
   padding: 17px 0;
-  box-shadow: inset 0px -2px 0px var(--basicBlack);
+  box-shadow: inset 0 -2px 0 var(--basicBlack);
   border: none;
 
   box-sizing: border-box;
+
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
@@ -78,7 +80,6 @@
 .order-form__reminder {
   font-size: 14px;
   line-height: 16px;
-
 }
 
 .order-form__button {
