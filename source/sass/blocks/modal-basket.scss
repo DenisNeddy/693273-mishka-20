@@ -7,8 +7,9 @@
 }
 
 .modal-basket__wrapper {
-  max-width: 260px;
   margin: 0 auto;
+
+  max-width: 260px;
 }
 
 .modal-basket__title {
@@ -79,7 +80,6 @@
 
   vertical-align: middle;
   text-align: center;
-
   color: var(--basicWhite);
 
   background-color: var(--basicGreen);
