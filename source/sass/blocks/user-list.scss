@@ -7,10 +7,10 @@
   background-color: var(--basicWhite);
   border: none;
   &::placeholder {
-   font-size: 17px;
-   line-height: 24px;
-   font-weight: bold;
-   color: var(--basicDark);
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    color: var(--basicDark);
   }
 }
 
@@ -21,8 +21,7 @@
 
 .user-list__link {
   font-size: 17px;
-   line-height: 24px;
-   font-weight: bold;
-   color: var(--basicBlack);
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basicBlack);
 }
-
