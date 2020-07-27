@@ -1,4 +1,6 @@
 .reviews__title {
+  margin-top: 58px;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -8,7 +10,7 @@
 .reviews__list {
   margin: 0;
   padding: 0;
-  style-list: none;
+  list-style: none;
 }
 
 .reviews__content {
@@ -21,6 +23,8 @@
 }
 
 .reviews__author {
+  margin-top: 33px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -36,6 +40,8 @@
 }
 .reviews__button {
   display: inline-block;
+
+  margin-bottom: 45px;
 
   width: 100%;
 

@@ -41,6 +41,7 @@
     <main class="page-inner">
       <h1 class="page-inner__main-title inner-title">Каталог товаров</h1>
       <section class="page-inner__catalog catalog">
+        <div class="catalog__wrapper">
         <h2 class="visually-hidden">Товары магазина Мишка</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -52,9 +53,11 @@
                 <a href="#" class="inner-product-cart__title-link">Зайчик-попрыгайчик</a>
               </h3>
               <span class="inner-product-cart__property">Рост 30 см, вес 200 г</span>
-              <span class="inner-product-cart__price">1200 руб.</span>
-              <a class="inner-product-cart__buy" aria-label="Заказать">
-              </a>
+              <div class="inner-product-cart__price-wrapper">
+                <span class="inner-product-cart__price">1200 руб.</span>
+                <a class="inner-product-cart__buy" aria-label="Заказать">
+                </a>
+              </div>
             </article>
           </li>
           <li class="catalog__item">
@@ -66,9 +69,11 @@
                 <a href="#" class="inner-product-cart__title-link">Корзина для белья</a>
               </h3>
               <span class="inner-product-cart__property">Диаметр 15 см, высота 10 см</span>
-              <span class="inner-product-cart__price">690 руб.</span>
-              <a class="inner-product-cart__buy" aria-label="Заказать">
-              </a>
+              <div class="inner-product-cart__price-wrapper">
+                <span class="inner-product-cart__price">690 руб.</span>
+                <a class="inner-product-cart__buy" aria-label="Заказать">
+                </a>
+              </div>
             </article>
           </li>
           <li class="catalog__item">
@@ -77,15 +82,18 @@
                 <img class="inner-product-cart__image" src="https://via.placeholder.com" width="260" height="195" alt="Фотография большой корзиной для игрушек">
               </a>
               <h3 class="inner-product-cart__title">
-                <a href="#" class="inner-product-cart__title-link">Большая корзина для игрушек</a>
+                <a href="#" class="inner-product-cart__title-link">Большая корзина<br>для игрушек</a>
               </h3>
               <span class="inner-product-cart__property">Диаметр 30 см, высота 30 см</span>
-              <span class="inner-product-cart__price">1500 руб.</span>
-              <a class="inner-product-cart__buy" aria-label="Заказать">
-              </a>
+              <div class="inner-product-cart__price-wrapper">
+                <span class="inner-product-cart__price">1500 руб.</span>
+                <a class="inner-product-cart__buy" aria-label="Заказать">
+                </a>
+              </div>
             </article>
           </li>
         </ul>
+        </div>
       </section>
       <section class="page-inner__video-content video-cart">
         <h2 class="visually-hidden">Видео обзор товаров</h2>
@@ -116,12 +124,12 @@
           </a>
         </li>
       </ul>
-      <span class="footer__creators creators">
-        Разработано
+      <p class="footer__creators creators">
+        <span class="creators__title">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="creators__logo" aria-label="Переход на сайт htmlacademy">
           <img src="https://via.placeholder.com/" width="27" height="34" alt="Логотип компании htmlacademy">
         </a>
-      </span>
+      </p>
     </footer>
   </body>
 </html>
