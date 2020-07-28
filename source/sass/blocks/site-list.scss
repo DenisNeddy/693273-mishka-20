@@ -1,5 +1,5 @@
 .site-list {
-  @mixin list-reset;
+  @include list-reset;
 }
 
 .site-list__item {

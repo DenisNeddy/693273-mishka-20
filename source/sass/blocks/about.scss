@@ -6,7 +6,7 @@
 }
 
 .about__list {
-  @mixin list-reset;
+  @include list-reset;
 }
 
 .about__item-title {
