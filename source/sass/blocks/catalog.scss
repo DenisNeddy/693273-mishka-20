@@ -1,5 +1,5 @@
 .catalog__list {
-  @mixin list-reset;
+  @include list-reset;
 }
 
 .catalog-item {
