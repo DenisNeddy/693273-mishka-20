@@ -1,6 +1,6 @@
 
 .popular__list {
-  @mixin list-reset;
+  @include list-reset;
 }
 
 .popular__title {
