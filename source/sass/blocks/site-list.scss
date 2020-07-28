@@ -1,0 +1,14 @@
+.site-list {
+  @mixin list-reset;
+}
+
+.site-list__item {
+  box-shadow: inset 0 1px 0 $shadowGrey;
+}
+
+.site-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basicBlack;
+}

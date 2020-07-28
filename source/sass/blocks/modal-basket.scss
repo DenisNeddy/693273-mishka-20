@@ -1,0 +1,87 @@
+.modal-basket {
+  text-align: center;
+
+  background-color: $basicWhite;
+
+  box-shadow: 0 5px 10px $modalShadow;
+}
+
+.modal-basket__wrapper {
+  margin: 0 auto;
+
+  max-width: 260px;
+}
+
+.modal-basket__title {
+  padding-right: 50px;
+  padding-left: 51px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $basicBlack;
+  text-align: center;
+}
+
+.modal-basket__description {
+  margin-top: 14px;
+
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-basket__size-list {
+  display: flex;
+
+  margin: 0;
+  margin-top: 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.modal-basket__size-item {
+  margin-right: 10px;
+}
+
+.modal-basket__size-item:last-child {
+  margin-right: 0;
+}
+
+.modal-basket__size-button {
+  width: 80px;
+  height: 50px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $basicDark;
+
+  background-color: $basicWhite;
+  border: 2px solid $opacityDark01;
+
+  cursor: pointer;
+
+  &--active {
+    border-color: $basicGreen;
+  }
+}
+
+.modal-basket__button {
+  display: inline-block;
+
+  margin-top: 31px;
+  margin-bottom: 48px;
+
+  width: 100%;
+
+  vertical-align: middle;
+  text-align: center;
+  color: $basicWhite;
+
+  background-color: $basicGreen;
+  border-color: $basicGreen;
+}

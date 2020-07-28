@@ -1,0 +1,28 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+}
+
+.user-list__input {
+  background-color: $basicWhite;
+  border: none;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $basicDark;
+  }
+}
+
+.user-list__form,
+.user-list__shop-basket {
+  box-shadow: inset 0 1px 0 $shadowGrey;
+}
+
+.user-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basicBlack;
+}

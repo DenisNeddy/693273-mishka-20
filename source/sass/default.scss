@@ -1,0 +1,49 @@
+html {
+  /*временно*/
+
+  background-color: $opacityBlack03;
+}
+
+body {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $basicDark;
+
+  background-color: $basicWhite;
+
+  /*Временный стили*/
+  // margin: 0 auto;
+  // width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(1px, 1px, 1px, 0);
+}

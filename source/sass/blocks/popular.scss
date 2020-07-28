@@ -1,0 +1,29 @@
+
+.popular__list {
+  @mixin list-reset;
+}
+
+.popular__title {
+  display: inline-block;
+
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  padding-right: 160px;
+
+  width: 100%;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basicWhite;
+  vertical-align: center;
+
+  background-color: $basicGreen;
+
+  box-sizing: border-box;
+}
+
+.popular__item:last-child .popular__title {
+  background-color: $basicGreenDark;
+}
