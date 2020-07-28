@@ -3,8 +3,8 @@
 
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
-  color: var(--basicBlack);
+  font-weight: 700;
+  color: $basicBlack;
 }
 
 .reviews__list {
@@ -28,16 +28,16 @@
 
   font-size: 17px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
-  color: var(--basicBlack);
+  color: $basicBlack;
 }
 
 .reviews__author-contacts {
   font-size: 17px;
   line-height: 30px;
-  font-weight: normal;
-  color: var(--basicDark);
+  font-weight: 400;
+  color: $basicDark;
 }
 
 .reviews__button {

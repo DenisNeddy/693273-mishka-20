@@ -1,7 +1,7 @@
 .inner-product-cart {
   padding-bottom: 27px;
 
-  border: 1px solid var(--shadowGrey);
+  border: 1px solid $shadowGrey;
 }
 
 .inner-product-cart__title {
@@ -16,9 +16,9 @@
 
   font-size: 17px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   vertical-align: middle;
-  color: var(--basicDark);
+  color: $basicDark;
 }
 
 .inner-product-cart__property {
@@ -33,7 +33,7 @@
   font-size: 13px;
   line-height: 30px;
 
-  border-bottom: 1px solid var(--shadowGrey);
+  border-bottom: 1px solid $shadowGrey;
 }
 
 .inner-product-cart__price-wrapper {
@@ -49,8 +49,8 @@
 
   font-size: 15px;
   line-height: 24px;
-  font-weight: bold;
-  color: var(--basicBlack);
+  font-weight: 700;
+  color: $basicBlack;
 
   vertical-align: middle;
 }
@@ -68,6 +68,6 @@
 
   /*временные стили*/
 
-  background-color: var(--basicGreen);
+  background-color: $basicGreen;
   border-radius: 3px;
 }

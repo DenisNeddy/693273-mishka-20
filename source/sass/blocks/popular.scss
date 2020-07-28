@@ -1,9 +1,6 @@
 
 .popular__list {
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @mixin list-reset;
 }
 
 .popular__title {
@@ -18,15 +15,15 @@
 
   font-size: 19px;
   line-height: 24px;
-  font-weight: bold;
-  color: var(--basicWhite);
+  font-weight: 700;
+  color: $basicWhite;
   vertical-align: center;
 
-  background-color: var(--basicGreen);
+  background-color: $basicGreen;
 
   box-sizing: border-box;
 }
 
 .popular__item:last-child .popular__title {
-  background-color: var(--basicGreenDark);
+  background-color: $basicGreenDark;
 }

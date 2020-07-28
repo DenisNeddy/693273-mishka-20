@@ -1,41 +1,21 @@
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src:local("Open Sans Regular"),
-    local("OpenSans-Regular"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: bold;
-  font-weight: 700;
-  src:local("Open Sans Bold"),
-    local("OpenSans-Bold"),
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}
-
 html {
   /*временно*/
 
-  background-color: var(--opacityBlack03);
+  background-color: $opacityBlack03;
 }
 
 body {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  color: var(--basicDark);
+  font-weight: 400;
+  color: $basicDark;
 
-  background-color: var(--basicWhite);
+  background-color: $basicWhite;
 
   /*Временный стили*/
-  margin: 0 auto;
-  width: 320px;
+  // margin: 0 auto;
+  // width: 320px;
 }
 
 a {

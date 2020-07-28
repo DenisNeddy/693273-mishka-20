@@ -3,12 +3,12 @@
 
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--basicDark);
+  color: $basicDark;
 
-  background-color: var(--basicWhite);
-  border: 2px solid var(--basicDark);
+  background-color: $basicWhite;
+  border: 2px solid $basicDark;
 
   box-sizing: border-box;
 

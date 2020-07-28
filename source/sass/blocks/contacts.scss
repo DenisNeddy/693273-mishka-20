@@ -5,8 +5,8 @@
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
-  color: var(--basicBlack);
+  font-weight: 700;
+  color: $basicBlack;
 }
 
 .contacts__list {
@@ -15,7 +15,7 @@
 
   font-size: 15px;
   line-height: 30px;
-  color: var(--basicDark);
+  color: $basicDark;
 }
 
 .contacts__list-title {
@@ -43,14 +43,12 @@
 .contacts__list-email {
   display: inline-block;
 
-  padding-bottom: 1px;
-
   font-size: 15px;
   line-height: 30px;
   color: var(--basicDark);
   vertical-align: center;
 
-  border-bottom: 1px solid var(--basicGreen);
+  border-bottom: 1px solid $basicGreen;
 }
 
 

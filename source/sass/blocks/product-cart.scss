@@ -7,8 +7,8 @@
 
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
-  color: var(--basicBlack);
+  font-weight: 700;
+  color: $basicBlack;
 }
 
 .product-cart__rank {
@@ -16,16 +16,16 @@
 
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--basicGreen);
+  color: $basicGreen;
 }
 
 .product-cart__description {
 
   font-size: 17px;
   line-height: 30px;
-  color: var(--basicDark);
+  color: $basicDark;
 }
 
 .product-cart__property {
@@ -56,9 +56,9 @@
 
   font-size: 17px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
-  color: var(--basicDark);
+  color: $basicDark;
 }
 
 .product-cart__button {
