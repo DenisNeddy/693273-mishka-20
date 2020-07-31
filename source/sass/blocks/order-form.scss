@@ -18,6 +18,7 @@
 
 .order-form__legend {
   font-size: 17px;
+  font-family: inherit;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,6 +27,7 @@
 
 .order-form__label {
   font-size: 17px;
+  font-family: inherit;
   line-height: 18px;
   font-weight: 700;
   color: $basicBlack;
@@ -46,12 +48,16 @@
 .order-form__phone-input,
 .order-form__email-input {
   padding: 17px 0;
+
+  font-family: inherit;
+
   box-shadow: inset 0 -2px 0 $basicBlack;
   border: none;
 
   box-sizing: border-box;
 
   &::placeholder {
+    font-family: inherit;
     font-size: 17px;
     line-height: 18px;
 
@@ -76,6 +82,7 @@
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
+    font-family: inherit;
 
     color: $opacityBlack03;
   }
