@@ -22,8 +22,18 @@
   background-color: $basicGreen;
 
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: $specialGreen;
+  }
 }
 
-.popular__item:last-child .popular__title {
+.popular__item:nth-child(even) .popular__title {
   background-color: $basicGreenDark;
+
+  &:hover,
+  &:focus {
+    background-color: $specialGreenDark;
+  }
 }

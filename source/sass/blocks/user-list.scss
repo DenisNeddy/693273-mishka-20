@@ -25,4 +25,13 @@
   line-height: 24px;
   font-weight: 700;
   color: $basicBlack;
+
+  &:hover,
+  &:focus {
+    color: $opacityBlack06;
+  }
+
+  &:active {
+    color: $opacityBlack03;
+  }
 }

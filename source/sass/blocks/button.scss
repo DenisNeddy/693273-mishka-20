@@ -13,4 +13,14 @@
   box-sizing: border-box;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $basicDark;
+    color: $basicWhite;
+  }
+
+  &:active {
+    color: $opacityWhite03;
+  }
 }
