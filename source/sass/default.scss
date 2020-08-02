@@ -1,9 +1,3 @@
-html {
-  /*временно*/
-
-  background-color: $opacityBlack03;
-}
-
 body {
   font-size: 15px;
   line-height: 30px;
@@ -12,10 +6,6 @@ body {
   color: $basicDark;
 
   background-color: $basicWhite;
-
-  /*Временный стили*/
-  margin: 0 auto;
-  width: 320px;
 }
 
 a {

@@ -1,0 +1,26 @@
+.action-list {
+  display: none;
+
+  @include list-reset;
+
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.action-list__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $basicBlack;
+
+  &:hover,
+  &:focus {
+    color: $opacityBlack06;
+  }
+
+  &:active {
+    color: $opacityBlack03;
+  }
+}

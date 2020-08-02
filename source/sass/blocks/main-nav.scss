@@ -1,0 +1,57 @@
+.main-nav {
+
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-nav__site-list {
+
+  @media (min-width: $table-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.main-nav__user-list {
+
+  @media (min-width: $table-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+
+  /*временно*/
+  width: 20px;
+  height: 2px;
+
+  background-color: $basicDark;
+
+  box-shadow: 0 4px 0 0  $basicDark,
+              0 8px 0 0  $basicDark;
+
+  border: none;
+
+  @media (min-width: $table-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

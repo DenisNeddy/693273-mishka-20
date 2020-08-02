@@ -1,0 +1,13 @@
+.logo {
+  @media (min-width: $table-width) {
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 450px;
+  }
+}

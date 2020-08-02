@@ -1,6 +1,15 @@
 .user-list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .user-list__input {
