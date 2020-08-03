@@ -1,12 +1,15 @@
 .user-list {
+  display: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: $table-width) {
     display: flex;
     justify-content: flex-end;
+
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-end;
   }
@@ -27,6 +30,24 @@
 .user-list__form,
 .user-list__shop-basket {
   box-shadow: inset 0 1px 0 $shadowGrey;
+
+  @media (min-width: $table-width) {
+    box-shadow: none;
+  }
+}
+
+.user-list__form {
+  @media (min-width: $table-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.user-list__shop-basket {
+  @media (min-width: $table-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .user-list__link {
