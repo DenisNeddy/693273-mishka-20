@@ -3,10 +3,83 @@
   line-height: 30px;
   font-weight: 700;
   color: $basicBlack;
+
+  @media (min-width: $table-width) {
+    margin-top: 60px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 175px;
+  }
+
 }
 
 .about__list {
   @include list-reset;
+}
+
+.about__item {
+  margin-top: 66px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  @media (min-width: $table-width) {
+    max-width: 334px;
+  }
+   @media (min-width: $desktop-width) {
+    max-width: 350px;
+  }
+}
+
+.about__list:nth-of-type(1) .about__item {
+  @media (min-width: $table-width) {
+    padding-right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 116px;
+  }
+}
+
+.about__list:nth-of-type(1) .about__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+  }
+}
+
+.about__list:nth-of-type(2) .about__item-title {
+  @media (min-width: $table-width) {
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 55px;
+  }
 }
 
 .about__item-title {
@@ -14,4 +87,14 @@
   line-height: 20px;
   font-weight: 700;
   color: $basicBlack;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

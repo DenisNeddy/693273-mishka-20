@@ -4,10 +4,10 @@
     position: relative;
   }
 
-   @media( min-width: $desktop-width) {
-   display: flex;
-   flex-direction: column;
-   position: relative;
+  @media( min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
   }
 }
 
@@ -19,7 +19,7 @@
 }
 
 .header__action-wrapper {
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     position: absolute;
