@@ -1,14 +1,14 @@
 .product-cart__item {
   @media (min-width: $table-width) {
-  position: relative;
+    position: relative;
 
-  padding-top: 31px;
+    padding-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
-  position: relative;
+    position: relative;
 
-  padding-top: 115px;
+    padding-top: 115px;
   }
 }
 
@@ -19,7 +19,7 @@
     align-items: center;
   }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
   }
@@ -162,7 +162,7 @@
 
     /*временные размеры*/
     width: 333px;
-    height: 404px
+    height: 404px;
   }
 
   @media (min-width: $desktop-width) {

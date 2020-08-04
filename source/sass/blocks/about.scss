@@ -35,7 +35,6 @@
 
     margin-left: 175px;
   }
-
 }
 
 .about__list {
@@ -51,7 +50,8 @@
   @media (min-width: $table-width) {
     max-width: 334px;
   }
-   @media (min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     max-width: 350px;
   }
 }

@@ -4,7 +4,20 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
   color: $basicBlack;
 
   background-color: $bgGrey;
+
+  @media (min-width: $table-width) {
+    font-size: 43px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    text-align: center;
+  }
 }

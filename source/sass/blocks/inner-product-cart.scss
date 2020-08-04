@@ -2,6 +2,18 @@
   padding-bottom: 27px;
 
   border: 1px solid $shadowGrey;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 316px;
+    min-height: 659px;
+  }
 }
 
 .inner-product-cart__title {
@@ -19,6 +31,16 @@
   font-weight: 700;
   vertical-align: middle;
   color: $basicDark;
+
+  @media (min-width: $table-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .inner-product-cart__property {
@@ -26,19 +48,35 @@
 
   margin-top: 10px;
   margin-left: 28px;
-  padding-bottom: 18px;
+
 
   max-width: 204px;
 
   font-size: 13px;
   line-height: 30px;
 
-  border-bottom: 1px solid $shadowGrey;
+  @media (min-width: $table-width) {
+    font-size: 15px;
+    line-height: 30px;
+
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 30px;
+
+    max-width: 100%;
+  }
 }
 
 .inner-product-cart__price-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+  }
 }
 
 .inner-product-cart__price {
@@ -53,6 +91,16 @@
   color: $basicBlack;
 
   vertical-align: middle;
+
+  @media (min-width: $table-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .inner-product-cart__buy {
@@ -64,10 +112,30 @@
   width: 20px;
   height: 19px;
 
-  vertical-align: top;
+  vertical-align: middle;
 
   /*временные стили*/
 
   background-color: $basicGreen;
   border-radius: 3px;
+}
+
+.inner-product-cart__content-wrapper {
+  @media (min-width: $table-width) {
+    width: 50%;
+    margin-left: auto;
+    margin-top: 489px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-left: 0;
+    margin-top: 489px;
+
+    width: 100%;
+    min-height: 197px;
+  }
 }

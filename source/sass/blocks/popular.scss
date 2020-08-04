@@ -8,6 +8,7 @@
     background-color: $bgGreyPopular;
   }
 }
+
 .popular__container {
   @media (min-width: $table-width) {
     width: 668px;
@@ -72,8 +73,6 @@
     padding-right: 160px;
   }
 }
-
-
 
 .popular__item:nth-child(even) {
   background-color: $basicGreenDark;
