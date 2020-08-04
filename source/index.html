@@ -142,39 +142,49 @@
         </div>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <blockquote class="reviews__content">
-              <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <cite class="reviews__author">Анастасия Красильникова</cite>
-              <a href="#" class="reviews__author-contacts">@misssssiskras</a>
-              <button type="button" class="reviews__pagination reviews__pagination--back">
-                <span class="visually-hidden">Назад</span>
-              </button>
-              <button type="button" class="reviews__pagination reviews__pagination--next">
-                <span class="visually-hidden">Вперед</span>
-              </button>
-              <a href="#" class="reviews__button button">Написать</a>
-            </blockquote>
-          </li>
-        </ul>
+        <div class="reviews__wrapper container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <blockquote class="reviews__content">
+                <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                </p>
+                <div class="reviews__author-wrapper">
+                  <cite class="reviews__author">Анастасия Красильникова</cite>
+                  <a href="#" class="reviews__author-contacts">@misssssiskras</a>
+                </div>
+                <div class="reviews__pagination-wrapper">
+                <button type="button" class="reviews__pagination reviews__pagination--back">
+                  <span class="visually-hidden">Назад</span>
+                </button>
+                <button type="button" class="reviews__pagination reviews__pagination--next">
+                  <span class="visually-hidden">Вперед</span>
+                </button>
+                </div>
+                <a href="#" class="reviews__button button">Написать</a>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <dt class="contacts__list-title">email:</dt>
-          <dd class="contacts__list-description">
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__list-email">info@mimimishkashop.ru</a>
-          </dd>
-          <dt class="contacts__list-title">адрес:</dt>
-          <dd class="contacts__list-description">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </dd>
-        </dl>
-        <img class="contacts__map" src="https://via.placeholder.com/" width="322" height="457" alt="Карта с адресом нашей компании">
-        <a href="#" class="contacts__button button">Напишите нам</a>
+        <div class="contacts__content-wrapper container">
+          <h2 class="contacts__title">Контакты</h2>
+          <dl class="contacts__list">
+            <dt class="contacts__list-title">email:</dt>
+            <dd class="contacts__list-description">
+              <a href="mailto:info@mimimishkashop.ru" class="contacts__list-email">info@mimimishkashop.ru</a>
+            </dd>
+            <dt class="contacts__list-title">адрес:</dt>
+            <dd class="contacts__list-description">
+              г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            </dd>
+          </dl>
+        </div>
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта с адресом нашей компании">
+        <div class="contacts__button-wrapper container">
+          <a href="#" class="contacts__button button">Напишите нам</a>
+        </div>
       </section>
     </main>
     <footer class="footer">
