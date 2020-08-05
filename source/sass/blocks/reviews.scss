@@ -1,5 +1,5 @@
 .reviews {
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
@@ -12,7 +12,7 @@
 }
 
 .reviews__wrapper {
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
     position: relative;
   }
 
@@ -46,7 +46,6 @@
 
     font-size: 53px;
     line-height: 57px;
-
   }
 }
 
@@ -65,17 +64,17 @@
   padding: 0;
 
   @media (min-width: $table-width) {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-   margin-left: 175px;
+    margin-left: 175px;
   }
 }
 
@@ -93,7 +92,7 @@
 }
 
 .reviews__author-wrapper {
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
     display: flex;
     flex-direction: column;
 
@@ -128,14 +127,14 @@
 }
 
 .reviews__pagination-wrapper {
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
 
     margin-top: 50px;
 
     width: 50%;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
 
     margin-top: 50px;
 
@@ -156,17 +155,16 @@
   box-sizing: border-box;
 
   @media (min-width: $table-width) {
-   position: absolute;
-   top: 88px;
-   right: 0;
-   max-width: 170px;
+    position: absolute;
+    top: 88px;
+    right: 0;
+    max-width: 170px;
   }
 
-   @media (min-width: $desktop-width) {
-   position: absolute;
-   top: 88px;
-   right: 0;
-   max-width: 170px;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    max-width: 170px;
   }
 }
-
