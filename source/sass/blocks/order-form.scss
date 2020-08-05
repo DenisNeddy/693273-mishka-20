@@ -1,8 +1,8 @@
 .order-form__fieldset {
-  display: flex;
-  flex-direction: column;
-  position: relative;
   margin-top: 15px;
+
+  padding: 0;
+
   border: none;
 }
 
@@ -10,10 +10,13 @@
   margin-top: 30px;
 }
 
-
 .order-form__checkbox-wrapper {
   display: flex;
   margin-top: 25px;
+
+  @media (min-width: $table-width) {
+    width: 240px;
+  }
 }
 
 .order-form__legend {
@@ -22,6 +25,20 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $basicGreen;
+
+  @media (min-width: $table-width) {
+    align-self: center;
+    text-align: left;
+
+    width: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    text-align: center;
+
+    width: 174px;
+  }
 }
 
 .order-form__label {
@@ -29,6 +46,12 @@
   line-height: 18px;
   font-weight: 700;
   color: $basicBlack;
+
+  @media (min-width: $table-width) {
+    padding-left: 20px;
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .order-form__input-wrapper {
@@ -36,6 +59,11 @@
   flex-direction: column;
 
   margin-top: 22px;
+
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .open-form__input-wrapper:first-child {
@@ -46,8 +74,11 @@
 .order-form__phone-input,
 .order-form__email-input {
   padding: 17px 0;
-  box-shadow: inset 0 -2px 0 $basicBlack;
+
+  background-color: transparent;
   border: none;
+
+  box-shadow: inset 0 -2px 0 $basicBlack;
 
   box-sizing: border-box;
 
@@ -56,6 +87,51 @@
     line-height: 18px;
 
     color: $opacityBlack03;
+  }
+}
+
+.order-form__phone-input,
+.order-form__email-input {
+  @media (min-width: $table-width) {
+    width: 100%;
+
+    &::placeholder {
+      padding-left: 20px;
+      font-size: 19px;
+      line-height: 18px;
+   }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &::placeholder {
+      padding-left: 20px;
+      font-size: 19px;
+      line-height: 18px;
+   }
+  }
+}
+
+.order-form__text-input {
+   @media (min-width: $table-width) {
+    width: 100%;
+
+    &::placeholder {
+      padding-left: 20px;
+      font-size: 19px;
+      line-height: 18px;
+   }
+  }
+
+     @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &::placeholder {
+      padding-left: 20px;
+      font-size: 19px;
+      line-height: 18px;
+   }
   }
 }
 
@@ -79,6 +155,14 @@
 
     color: $opacityBlack03;
   }
+
+  @media (min-width: $table-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .order-form__reminder {
@@ -90,4 +174,114 @@
   margin-top: 30px;
 
   width: 100%;
+
+  @media (min-width: $table-width) {
+    order: -1;
+    max-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    max-width: 230px;
+    margin-left: 152px;
+  }
 }
+
+.order-form__button-wrapper {
+  @media (min-width: $table-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.order-form__wrapper {
+  @media (min-width: $table-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.order-form__fieldset:nth-child(2) {
+   @media (min-width: $table-width) {
+    background-color: $bgGrey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bgGrey;
+  }
+}
+
+.order-form__checkbox-group {
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 875px;
+  }
+}
+
+.order-form__name-group {
+  @media (min-width: $table-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.order-form__name-group .order-form__label {
+  @media (min-width: $table-width) {
+    padding-top: 17px;
+    padding-right: 26px;
+  }
+}
+
+.order-form__contacts-group {
+  @media (min-width: $table-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.order-form__fieldset:nth-child(n+4):nth-child(-n+5) {
+  @media (min-width: $table-width) {
+    margin: 0;
+    background-color: $bgGrey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    background-color: $bgGrey;
+  }
+}
+
+.order-form__fieldset:nth-child(6) {
+  @media (min-width: $table-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+}
+
+

@@ -6,8 +6,17 @@
 .page-form__main-title {
   padding-top: 73px;
   padding-bottom: 73px;
-  padding-left: 23px;
-  padding-right: 22px;
+  text-align: center;
+
+  @media (min-width: $table-width) {
+    padding-top: 98px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 79px;
+  }
 }
 
 .page-form__description {

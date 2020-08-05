@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 70px;
+    margin-left: 175px;
 
     font-size: 53px;
     line-height: 57px;
@@ -22,7 +23,6 @@
 .about__list-wrapper {
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: $table-width) {
     display: flex;

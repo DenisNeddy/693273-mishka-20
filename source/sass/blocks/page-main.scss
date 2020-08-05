@@ -45,3 +45,12 @@
     background-position: 50% 0;
   }
 }
+
+.page-main__contacts {
+  margin-top: 38px;
+
+  @media (min-width: $desktop-width) {
+   padding-top: 140px;
+  }
+
+}
