@@ -114,7 +114,7 @@
 }
 
 .order-form__text-input {
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
     width: 100%;
 
     &::placeholder {
@@ -124,7 +124,7 @@
    }
   }
 
-     @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 100%;
 
     &::placeholder {
