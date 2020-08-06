@@ -24,4 +24,20 @@
 
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $table-width) {
+    margin-top: 54px;
+
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 98px;
+    margin-left: 70px;
+    padding-right: 260px;
+
+    text-align: left;
+  }
 }
