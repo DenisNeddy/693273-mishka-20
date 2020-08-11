@@ -1,4 +1,7 @@
 .about__title {
+  margin: 0;
+  margin-top: 31px;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -42,7 +45,7 @@
 }
 
 .about__item {
-  margin-top: 66px;
+
   width: 100%;
 
   box-sizing: border-box;
@@ -73,6 +76,7 @@
 }
 
 .about__list:nth-of-type(2) .about__item-title {
+
   @media (min-width: $table-width) {
     padding-right: 40px;
   }
@@ -83,6 +87,9 @@
 }
 
 .about__item-title {
+  margin: 0;
+  padding-top: 80px;
+
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;

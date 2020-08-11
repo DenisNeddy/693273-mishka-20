@@ -28,7 +28,6 @@
 
 .reviews__title {
   margin: 0;
-  margin-top: 58px;
 
   font-size: 25px;
   line-height: 30px;
@@ -79,6 +78,9 @@
 }
 
 .reviews__description {
+  margin: 0;
+  margin-top: 15px;
+
   @media (min-width: $table-width) {
 
     font-size: 17px;
@@ -92,6 +94,8 @@
 }
 
 .reviews__author-wrapper {
+  margin-top: 31px;
+
   @media (min-width: $table-width) {
     display: flex;
     flex-direction: column;
@@ -126,7 +130,23 @@
   color: $basicDark;
 }
 
+.reviews__pagination {
+  margin-top: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 50%;
+  background-color: $basicWhite;
+  border: 1px solid $shadowGrey;
+}
+
+.reviews__pagination:nth-child(1) {
+  margin-right: -1px;
+}
+
 .reviews__pagination-wrapper {
+  display: flex;
+  width: 100%;
+
   @media (min-width: $table-width) {
 
     margin-top: 50px;
@@ -145,6 +165,7 @@
 .reviews__button {
   display: inline-block;
 
+  margin-top: 39px;
   margin-bottom: 45px;
 
   width: 100%;

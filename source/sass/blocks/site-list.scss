@@ -18,7 +18,6 @@
   @media (min-width: $table-width) {
     margin-right: 36px;
 
-
     font-size: 15px;
     line-height: 24px;
 
@@ -26,9 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
     margin-right: 41px;
-
   }
 }
 
@@ -42,6 +39,16 @@
   }
 }
 
+.site-list__item a[href] {
+  &:hover,
+  &:focus {
+    color: $opacityBlack06;
+  }
+
+  &:active {
+    color: $opacityBlack03;
+  }
+}
 .site-list__link {
   display: block;
   margin: 0 auto;
@@ -56,14 +63,6 @@
   font-weight: 700;
   color: $basicBlack;
 
-  &:hover,
-  &:focus {
-    color: $opacityBlack06;
-  }
-
-  &:active {
-    color: $opacityBlack03;
-  }
 
   @media (min-width: $table-width) {
     padding: 0;

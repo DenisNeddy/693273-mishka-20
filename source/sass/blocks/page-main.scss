@@ -7,6 +7,7 @@
   margin: 0;
   padding-top: 73px;
   padding-bottom: 120px;
+  max-height: 373px;
 
   font-size: 27px;
   line-height: 30px;
@@ -46,6 +47,21 @@
   }
 }
 
+.page-main__product-cart {
+  margin-top: 31px;
+  padding-bottom: 36px;
+  border-bottom: 2px solid tomato;
+}
+
+.page-main__about {
+  padding-bottom: 28px;
+  border-bottom: 2px solid tomato;
+}
+
+.page-main__reviews {
+  margin-top: 30px;
+}
+
 .page-main__contacts {
   margin-top: 38px;
 
@@ -53,3 +69,5 @@
     padding-top: 140px;
   }
 }
+
+
