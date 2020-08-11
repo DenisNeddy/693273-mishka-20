@@ -20,6 +20,7 @@
 }
 
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -58,11 +59,17 @@
   }
 }
 
-.contacts__list-title {
+.contacts__list-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.contacts__list-wrapper:nth-child(1) {
   margin-bottom: 40px;
+}
 
-  width: 30%;
-
+.contacts__list-title {
+  min-width: 66px;
   @media (min-width: $table-width) {
     width: auto;
   }
@@ -84,10 +91,7 @@
 
 .contacts__list-description {
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
-
-  width: 70%;
 
   @media (min-width: $table-width) {
     width: auto;
@@ -132,6 +136,8 @@
 }
 
 .contacts__map {
+  margin-top: 32px;
+
   @media (min-width: $table-width) {
     margin-top: 39px;
     /*Временно*/
@@ -151,7 +157,6 @@
   display: inline-block;
 
   margin-top: 39px;
-  margin-bottom: 39px;
 
   width: 100%;
 

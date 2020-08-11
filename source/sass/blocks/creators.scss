@@ -1,5 +1,12 @@
 .creators {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid $footerDecorGrey;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
 }
 
 .creators__title {
