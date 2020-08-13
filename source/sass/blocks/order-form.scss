@@ -14,17 +14,29 @@
   display: flex;
   margin-top: 25px;
 
+
+
   @media (min-width: $table-width) {
-    width: 240px;
+    width: calc(100% / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc((100% -178px) / 3);
   }
 }
 
 .order-form__legend {
+  display: inline-block;
+  position: relative;
+  padding-right: 28px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: $basicGreen;
+  background-color: $basicWhite;
+
+  z-index: 100;
 
   @media (min-width: $table-width) {
     align-self: center;
@@ -48,9 +60,135 @@
   color: $basicBlack;
 
   @media (min-width: $table-width) {
-    padding-left: 20px;
     font-size: 19px;
     line-height: 18px;
+  }
+}
+
+.order-form__radio-label {
+  position: relative;
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    width: 38px;
+    height: 38px;
+
+    border: 2px solid $basicDark;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $table-width) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 81px;
+
+    &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    border: 2px solid $basicDark;
+    border-radius: 50%;
+  }
+  }
+}
+
+.order-form__radio:checked + .order-form__radio-label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $basicGreen;
+
+    border-radius: 50%;
+
+    @media (min-width: $table-width) {
+    top: 24px;
+    left: 18px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.order-form__checkbox-label {
+  position: relative;
+  background-color: tomato;
+  padding-left: 60px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+
+    border: 2px solid $basicDark;
+  }
+
+  @media (min-width: $table-width) {
+    padding-left: 71px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 54px;
+      height: 52px;
+
+      border: 2px solid $basicDark;
+  }
+  }
+}
+
+.order-form__checkbox:checked + .order-form__checkbox-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+
+   @media (min-width: $table-width) {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+
+    width: 33px;
+    height: 22px;
+    background-size: 33px 22px;
   }
 }
 
@@ -224,12 +362,36 @@
 }
 
 .order-form__wrapper {
+    position: relative;
+    z-index: 1;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    z-index: 2;
+
+    background-color: $basicGreen;
+  }
+
   @media (min-width: $table-width) {
     display: flex;
+
+    &:before {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -248,14 +410,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 480px;
+    max-width: 480px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 875px;
+    max-width: calc(100% - 178px);
   }
 }
 

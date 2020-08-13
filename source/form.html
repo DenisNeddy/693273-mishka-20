@@ -80,17 +80,18 @@
       <form class="page-form__content order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">Тип</legend>
+            <h3 class="order-form__legend">Тип</h3>
+
             <div class="order-form__radio-group">
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__radio" type="radio" name="choice-category" id="radio-accessory" value="accessory for the interior" checked>
-                <label class="order-form__label" for="radio-accessory">
+                <input class="visually-hidden order-form__radio" type="radio" name="choice-category" id="radio-accessory" value="accessory for the interior" checked>
+                <label class="order-form__label order-form__radio-label" for="radio-accessory">
                   Аксессуары для интерьера
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__radio" type="radio" name="choice-category" id="radio-toy" value="children-toy">
-                <label class="order-form__label" for="radio-toy">
+                <input class="visually-hidden order-form__radio" type="radio" name="choice-category" id="radio-toy" value="children-toy">
+                <label class="order-form__label order-form__radio-label" for="radio-toy">
                   Детская игрушка
                 </label>
               </p>
@@ -99,41 +100,41 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">Цвет</legend>
+            <h3 class="order-form__legend">Цвет</h3>
             <div class="order-form__checkbox-group">
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-white" checked>
-                <label class="order-form__label" for="color-white">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-white" checked>
+                <label class="order-form__label order-form__checkbox-label" for="color-white">
                   Белый
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-grey" checked>
-                <label class="order-form__label" for="color-grey">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-grey" checked>
+                <label class="order-form__label order-form__checkbox-label" for="color-grey">
                   Серый
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-tiffany">
-                <label class="order-form__label" for="color-tiffany">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-tiffany">
+                <label class="order-form__label order-form__checkbox-label" for="color-tiffany">
                   «Тиффани»
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-black">
-                <label class="order-form__label" for="color-black">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-black">
+                <label class="order-form__label order-form__checkbox-label" for="color-black">
                   Черный
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-pink">
-                <label class="order-form__label" for="color-pink">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-pink">
+                <label class="order-form__label order-form__checkbox-label" for="color-pink">
                   Розовый
                 </label>
               </p>
               <p class="order-form__checkbox-wrapper">
-                <input class="order-form__checkbox" type="checkbox" name="checkbox-color" id="color-orange">
-                <label class="order-form__label" for="color-orange">
+                <input class="visually-hidden order-form__checkbox" type="checkbox" name="checkbox-color" id="color-orange">
+                <label class="order-form__label order-form__checkbox-label" for="color-orange">
                   Оранжевый
                 </label>
               </p>
@@ -142,7 +143,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">ФИО</legend>
+            <h3 class="order-form__legend">ФИО</h3>
             <div class="order-form__name-group">
               <p class="order-form__input-wrapper">
                 <label class="order-form__label" for="name-field">Имя:</label>
@@ -165,7 +166,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">Тел</legend>
+            <h3 class="order-form__legend">Тел</h3>
             <p class="order-form__contacts-group">
               <label class="order-form__label" for="phone-field">
                 <span class="visually-hidden">
@@ -178,7 +179,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">e-mail</legend>
+            <h3 class="order-form__legend">e-mail</h3>
             <div class="order-form__contacts-group">
             <label class="order-form__label" for="email-field">
               <span class="visually-hidden">
@@ -191,7 +192,7 @@
         </fieldset>
         <fieldset class="order-form__fieldset">
           <div class="order-form__wrapper container">
-            <legend class="order-form__legend">Доп</legend>
+            <h3 class="order-form__legend">Доп</h3>
             <textarea class="order-form__textarea" name="textarea-field" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
           </div>
         </fieldset>

@@ -23,7 +23,7 @@
 .inner-product-cart__title-link {
   display: inline-block;
 
-  margin-top: 25px;
+  margin-top: 29px;
   margin-left: 28px;
 
   font-size: 17px;
@@ -55,6 +55,7 @@
   font-size: 13px;
   line-height: 30px;
 
+
   @media (min-width: $table-width) {
     font-size: 15px;
     line-height: 30px;
@@ -74,6 +75,12 @@
   display: flex;
   justify-content: space-between;
 
+  margin-top: 18px;
+  margin-left: 28px;
+  margin-right: 28px;
+
+  border-top: 1px solid $shadowGrey;
+
   @media (min-width: $desktop-width) {
     margin-top: auto;
   }
@@ -83,7 +90,6 @@
   display: inline-block;
 
   margin-top: 23px;
-  margin-left: 28px;
 
   font-size: 15px;
   line-height: 24px;
@@ -107,17 +113,24 @@
   display: inline-block;
 
   margin-top: 23px;
-  margin-right: 27px;
 
   width: 20px;
   height: 19px;
 
   vertical-align: middle;
+  opacity: 0.2;
+  fill: $basicBlack;
 
-  /*временные стили*/
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: $basicGreen;
+  }
 
-  background-color: $basicGreen;
-  border-radius: 3px;
+  &:active {
+    opacity: 0.2;
+    fill: $basicGreen;
+  }
 }
 
 .inner-product-cart__content-wrapper {

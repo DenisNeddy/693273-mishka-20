@@ -1,8 +1,9 @@
 .video-cart__title {
+  position: relative;
   margin: 0;
   padding-top: 21px;
   padding-bottom: 26px;
-  padding-left: 91px;
+  padding-left: 90px;
 
   font-size: 17px;
   line-height: 24px;
@@ -11,6 +12,22 @@
   text-align: left;
 
   background-color: $basicWhite;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 28px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+
+    fill: $basicGreen;
+  }
 
   @media (min-width: $table-width) {
     order: 2;
@@ -34,6 +51,8 @@
     max-width: 240px;
   }
 }
+
+
 
 .video-cart__item {
   margin-bottom: 58px;
