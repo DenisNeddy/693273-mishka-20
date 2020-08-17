@@ -14,6 +14,8 @@
 }
 
 .user-list__input {
+  margin-top: 13px;
+
   background-color: $basicWhite;
   border: none;
 
@@ -36,7 +38,8 @@
 
 .user-list__form {
   margin: 0 auto;
-  padding-top: 29px;
+  margin-top: -2px;
+  padding-top: 20px;
   padding-bottom: 27px;
 
 
@@ -66,6 +69,7 @@
 }
 
 .user-list__shop-basket {
+  margin-top: -3px;
 
   @media (min-width: $table-width) {
     padding-top: 32px;
@@ -78,10 +82,10 @@
   position: relative;
   margin: 0 auto;
 
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 27px;
 
-  padding-left: 40px;
+  padding-left: 45px;
 
   max-width: 213px;
 

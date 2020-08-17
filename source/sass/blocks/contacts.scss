@@ -44,8 +44,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  font-size: 15px;
-  line-height: 30px;
+
   color: $basicDark;
 
   @media (min-width: $table-width) {
@@ -61,14 +60,20 @@
 
 .contacts__list-wrapper {
   display: flex;
+
+  margin-top: 13px;
   width: 100%;
+
 }
 
 .contacts__list-wrapper:nth-child(1) {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .contacts__list-title {
+  font-size: 15px;
+  line-height: 30px;
+
   min-width: 66px;
   @media (min-width: $table-width) {
     width: auto;
@@ -92,7 +97,10 @@
 .contacts__list-description {
   margin: 0;
   padding: 0;
+  padding-left: 10px;
 
+  font-size: 15px;
+  line-height: 30px;
   @media (min-width: $table-width) {
     width: auto;
   }
@@ -105,6 +113,7 @@
 
 .contacts__list-description:last-of-type {
   margin-bottom: 0;
+  padding-right: 20px;
 
   @media (min-width: $table-width) {
     max-width: 230px;
@@ -123,7 +132,7 @@
   display: inline-block;
 
   font-size: 15px;
-  line-height: 30px;
+  line-height: 20px;
   color: var(--basicDark);
   vertical-align: middle;
 
@@ -136,7 +145,7 @@
 }
 
 .contacts__map {
-  margin-top: 32px;
+  margin-top: 15px;
 
   @media (min-width: $table-width) {
     margin-top: 39px;
@@ -156,7 +165,7 @@
 .contacts__button {
   display: inline-block;
 
-  margin-top: 39px;
+  margin-top: 34px;
 
   width: 100%;
 

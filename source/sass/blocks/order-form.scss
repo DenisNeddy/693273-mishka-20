@@ -4,17 +4,19 @@
   padding: 0;
 
   border: none;
-}
 
-.order-form__fieldset:first-of-type {
-  margin-top: 30px;
+  &:nth-child(4) {
+    margin-top: 0;
+  }
+
+   &:nth-child(5) {
+    margin-top: 18px;
+  }
 }
 
 .order-form__checkbox-wrapper {
   display: flex;
-  margin-top: 25px;
-
-
+  margin: 0;
 
   @media (min-width: $table-width) {
     width: calc(100% / 2);
@@ -28,7 +30,10 @@
 .order-form__legend {
   display: inline-block;
   position: relative;
-  padding-right: 28px;
+  padding-right: 25px;
+  margin: 0;
+  margin-top: 15px;
+
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -65,11 +70,15 @@
   }
 }
 
+.order-form__radio-group {
+  margin-top: 13px;
+}
+
 .order-form__radio-label {
   position: relative;
   padding-left: 60px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 
 
   &:before {
@@ -79,8 +88,8 @@
     top: 4px;
     left: 0;
 
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 35px;
 
     border: 2px solid $basicDark;
     border-radius: 50%;
@@ -114,8 +123,8 @@
     top: 16px;
     left: 12px;
 
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 
     background-color: $basicGreen;
 
@@ -129,13 +138,16 @@
   }
 }
 
+.order-form__checkbox-group .order-form__checkbox-wrapper {
+  margin-top: 19px;
+}
+
 
 .order-form__checkbox-label {
   position: relative;
-  background-color: tomato;
-  padding-left: 60px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-left: 63px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   &:before {
     content: "";
@@ -143,8 +155,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
 
     border: 2px solid $basicDark;
   }
@@ -212,7 +224,6 @@
 .order-form__phone-input,
 .order-form__email-input {
   padding: 17px 0;
-  padding-left: 17px;
 
   font-size: 17px;
   font-family: inherit;
@@ -282,14 +293,19 @@
   }
 }
 
+.order-form__contacts-group {
+  margin: 0;
+}
 
 .order-form__textarea {
+  margin-top: 13px;
   padding-top: 16px;
-  padding-left: 18px;
+  padding-left: 15px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
   width: 100%;
+  min-height: 142px;
   border: 2px solid $basicBlack;
 
   box-sizing: border-box;
@@ -331,7 +347,7 @@
 }
 
 .order-form__button {
-  margin-top: 30px;
+  margin-top: 22px;
 
   width: 100%;
 
@@ -368,7 +384,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 24px;
+    top: 22px;
     left: 0;
 
     width: 100%;
