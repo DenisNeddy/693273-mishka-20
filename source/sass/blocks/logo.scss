@@ -5,4 +5,9 @@
   padding-bottom: 15px;
 
   text-align: center;
+
+  @media (min-width: $table-width) {
+    text-align: left;
+    padding: 0;
+  }
 }

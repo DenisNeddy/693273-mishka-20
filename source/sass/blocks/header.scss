@@ -16,6 +16,11 @@
   background-color: $basicWhite;
 
   box-shadow: inset 0 -1px 0 $shadowGrey;
+
+  @media (min-width: $table-width) {
+    min-height: 89px;
+  }
+
 }
 
 .header__action-wrapper {
