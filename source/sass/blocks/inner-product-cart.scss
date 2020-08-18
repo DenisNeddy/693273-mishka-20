@@ -6,6 +6,8 @@
   @media (min-width: $table-width) {
     display: flex;
     flex-direction: row;
+
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +35,8 @@
   color: $basicDark;
 
   @media (min-width: $table-width) {
+    margin-top: 27px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -80,6 +84,11 @@
   margin-right: 25px;
 
   border-top: 1px solid $shadowGrey;
+
+   @media (min-width: $table-width) {
+    margin-top: auto;
+    margin-bottom: 23px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: auto;
@@ -135,9 +144,10 @@
 
 .inner-product-cart__content-wrapper {
   @media (min-width: $table-width) {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 5px);
     margin-left: auto;
-    margin-top: 489px;
   }
 
   @media (min-width: $desktop-width) {
@@ -150,5 +160,17 @@
 
     width: 100%;
     min-height: 197px;
+  }
+}
+
+.inner-product-cart__image {
+  @media (min-width: $table-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+    width: 334px;
+    height: 334px;
   }
 }

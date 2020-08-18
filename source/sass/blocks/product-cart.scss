@@ -2,7 +2,7 @@
   @media (min-width: $table-width) {
     position: relative;
 
-    padding-top: 31px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,6 +57,10 @@
   color: $basicGreen;
 
   @media (min-width: $table-width) {
+    margin-top: 0;
+    margin-right: 14px;
+    font-size: 17px;
+    line-height: 17px;
     max-width: 100px;
     text-align: center;
   }
@@ -76,6 +80,9 @@
 
   @media (min-width: $table-width) {
     margin-top: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,7 +100,7 @@
   line-height: 24px;
 
   @media (min-width: $table-width) {
-    margin-top: 11px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,6 +128,10 @@
   padding-left: 30px;
 
   width: calc(100% * 0.7);
+
+  @media (min-width: $table-width) {
+  padding-left: 13px;
+  }
 }
 
 .product-cart__price {
@@ -160,6 +171,10 @@
   vertical-align: middle;
 
   box-sizing: border-box;
+
+  @media (min-width: $table-width) {
+    margin-top: 35px;
+  }
 }
 
 .product-cart__image {
@@ -167,7 +182,7 @@
 
   @media (min-width: $table-width) {
     position: absolute;
-    top: 167px;
+    top: 94px;
     right: 0;
 
     /*временные размеры*/
