@@ -1,6 +1,33 @@
 .page-form {
   padding-bottom: 57px;
   background-color: $basicWhite;
+
+  @media (min-width: $table-width) {
+    padding-bottom: 52px;
+
+  }
+}
+
+
+.page-form__decoration-wrapper {
+  position: relative;
+
+  @media (min-width: $table-width) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+    }
+  }
 }
 
 .page-form__main-title {
@@ -11,22 +38,8 @@
   @media (min-width: $table-width) {
 
     padding-top: 98px;
-    padding-bottom: 90px;
-/*
-    &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    padding-bottom: 67px;
 
-    width: 100%;
-    height: 24px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: auto 24px;
-  }*/
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +55,8 @@
   line-height: 24px;
 
   @media (min-width: $table-width) {
-    margin-top: 54px;
+    margin-top: 0;
+    padding-top: 77px;
 
     font-size: 17px;
     line-height: 30px;
