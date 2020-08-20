@@ -69,7 +69,6 @@
     margin-right: 30px;
     padding-left: 20px;
   }
-
 }
 
 .user-list__label::before {
@@ -125,10 +124,6 @@
 
     max-width: auto;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .user-list__link::before {
@@ -140,7 +135,7 @@
   width: 21px;
   height: 18px;
 
-  background-image: url('../img/icon-cart.svg');
+  background-image: url("../img/icon-cart.svg");
   opacity: 0.2;
 
   @media (min-width: $table-width) {

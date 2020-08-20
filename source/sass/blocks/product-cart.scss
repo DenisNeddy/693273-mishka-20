@@ -119,7 +119,6 @@
 
 .product-cart__property-title {
   width: calc(100% * 0.3);
-
 }
 
 .product-cart__property-description {
@@ -130,7 +129,7 @@
   width: calc(100% * 0.7);
 
   @media (min-width: $table-width) {
-  padding-left: 13px;
+    padding-left: 13px;
   }
 }
 

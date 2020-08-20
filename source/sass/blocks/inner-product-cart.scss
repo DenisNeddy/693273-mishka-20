@@ -85,7 +85,7 @@
 
   border-top: 1px solid $shadowGrey;
 
-   @media (min-width: $table-width) {
+  @media (min-width: $table-width) {
     margin-top: auto;
     margin-bottom: 23px;
   }

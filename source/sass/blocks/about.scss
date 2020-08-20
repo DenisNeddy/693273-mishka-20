@@ -13,15 +13,15 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-
   }
+
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 0 auto;
     background-size: 100%;
-
   }
 }
+
 .about__title {
   margin: 0;
 
@@ -40,7 +40,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 35px;
     margin-left: 175px;
-     padding-top: 90px;
+    padding-top: 90px;
 
     font-size: 53px;
     line-height: 57px;
@@ -105,8 +105,6 @@
 
 .about__list:last-child .about__item {
   @media (min-width: $table-width) {
-
-
     &:nth-child(n+2) {
       margin-top: 10px;
     }
@@ -114,7 +112,6 @@
 }
 
 .about__list:nth-of-type(2) .about__item-title {
-
   @media (min-width: $table-width) {
     padding-right: 40px;
   }

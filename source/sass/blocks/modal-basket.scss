@@ -2,10 +2,10 @@
 
   /*Временно*/
 
- display: none;
- position: fixed;
- top: 50%;
- left: 50%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 
   min-width: 320px;
   padding-bottom: 48px;
@@ -17,7 +17,7 @@
   box-shadow: 0 5px 10px $modalShadow;
   transform: translate(-50%, -50%);
 
-  @media(min-width: $table-width) {
+  @media (min-width: $table-width) {
     width: 566px;
   }
 }
@@ -26,12 +26,12 @@
   width: 260px;
   margin: 0 auto;
 
-  @media(min-width: $table-width) {
+  @media (min-width: $table-width) {
     width: 350px;
     margin: 0 auto;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 350px;
     margin: 0 auto;
   }
@@ -50,13 +50,13 @@
   color: $basicBlack;
   text-align: center;
 
-  @media(min-width: $table-width) {
+  @media (min-width: $table-width) {
     padding-right: 0;
     padding-left: 0;
     text-align: center;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
     text-align: center;

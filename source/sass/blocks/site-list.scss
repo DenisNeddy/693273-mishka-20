@@ -1,5 +1,4 @@
 .site-list {
-
   @include list-reset;
 
   @media (min-width: $table-width) {
@@ -43,9 +42,7 @@
 
     &:nth-child(1) {
       margin-right: 72px;
-
     }
-
   }
 }
 
@@ -69,6 +66,7 @@
     color: $opacityBlack03;
   }
 }
+
 .site-list__link {
   display: block;
   margin: 0 auto;
