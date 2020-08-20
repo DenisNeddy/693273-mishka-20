@@ -71,6 +71,11 @@
   @media (min-width: $table-width) {
     margin-top: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
+    padding-bottom: 45px;
+  }
 }
 
 .page-main__contacts {

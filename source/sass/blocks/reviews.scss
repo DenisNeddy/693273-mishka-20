@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     background-image: none;
+    padding-bottom: 82px;
+
   }
 }
 
@@ -131,6 +133,13 @@
    font-size: 18px;
    line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 33px;
+
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .reviews__author-contacts {
@@ -182,10 +191,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 35px;
 
-    margin-top: 50px;
-
-    width: 50%;
+    width: 48%;
   }
 }
 
@@ -215,14 +223,12 @@
     font-size: 18px;
     line-height: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
-
-
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 88px;
+    top: 50px;
     right: 0;
-    max-width: 170px;
+    max-width: 177px;
   }
 }
