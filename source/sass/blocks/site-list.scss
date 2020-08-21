@@ -1,8 +1,11 @@
 .site-list {
   @include list-reset;
 
+  border-bottom: 1px solid $shadowGrey;
+
   @media (min-width: $table-width) {
     display: flex;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,6 +14,7 @@
 
     min-height: 89px;
     box-sizing: border-box;
+    border-bottom: none;
 
     &::before {
       content: "";

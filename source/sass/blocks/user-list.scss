@@ -31,8 +31,10 @@
   }
 }
 
-.user-list__form,
+
 .user-list__shop-basket {
+  margin-top: -3px;
+
   box-shadow: inset 0 1px 0 $shadowGrey;
 
   @media (min-width: $table-width) {
@@ -83,10 +85,6 @@
   background-image: url("../img/icon-search.svg");
 
   opacity: 0.2;
-}
-
-.user-list__shop-basket {
-  margin-top: -3px;
 }
 
 .user-list__link {
