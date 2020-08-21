@@ -46,10 +46,12 @@
 
   @media (min-width: $table-width) {
     display: flex;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: 100%;
   }
 }
 
@@ -59,19 +61,31 @@
 
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
-    background-color: $specialGreen;
-  }
+  &:active {
+      background-color: $specialGreen;
+    }
+
 
   @media (min-width: $table-width) {
     width: 50%;
-    padding-right: 160px;
+
+     &:active {
+      background-color: $specialGreen;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 50%;
-    padding-right: 160px;
+
+
+    &:hover,
+    &:focus {
+      background-color: $specialGreen;
+    }
+
+    &:active {
+      background-color: $specialGreen;
+    }
   }
 }
 
@@ -91,15 +105,19 @@
 
   @media (min-width: $table-width) {
     padding-left: 37px;
-    padding-right: 160px;
     padding-bottom: 48px;
+    padding-left: 0;
 
     font-size: 20px;
     line-height: 30px;
+
+    width: calc(100% - 37px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 160px;
+    padding-left: 0;
+
+    width: calc(100% - 37px);
   }
 }
 

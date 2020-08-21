@@ -183,6 +183,8 @@
   padding-top: 15px;
   padding-bottom: 10px;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     display: block;
@@ -195,6 +197,11 @@
 
     border: 2px solid $basicDark;
     border-radius: 50%;
+  }
+
+  &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
   }
 
   @media (min-width: $table-width) {
@@ -215,6 +222,24 @@
       border: 2px solid $basicDark;
       border-radius: 50%;
     }
+
+    &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $formGreen;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
+    }
   }
 }
 
@@ -233,7 +258,7 @@
   border-radius: 50%;
 
   @media (min-width: $table-width) {
-    top: 23px;
+    top: 24px;
     left: 16px;
     width: 22px;
     height: 22px;
@@ -262,6 +287,8 @@
   padding-top: 12px;
   padding-bottom: 12px;
 
+  cursor: pointer;
+
   &::before {
     content: "";
     display: block;
@@ -272,6 +299,11 @@
     height: 36px;
 
     border: 2px solid $basicDark;
+  }
+
+  &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
   }
 
   @media (min-width: $table-width) {
@@ -290,6 +322,11 @@
 
       border: 2px solid $basicDark;
     }
+
+    &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -307,6 +344,16 @@
       height: 48px;
 
       border: 2px solid $basicDark;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border-color: $formGreen;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+      border-color: $basicBlack;
     }
   }
 }
@@ -379,9 +426,9 @@
 
   @media (min-width: $table-width) {
     width: 100%;
+    padding-left: 19px;
 
     &::placeholder {
-      padding-left: 19px;
       font-size: 19px;
       font-family: inherit;
       line-height: 18px;
@@ -391,6 +438,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-left: 19px;
 
     &::placeholder {
       font-size: 19px;

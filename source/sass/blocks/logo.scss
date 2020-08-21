@@ -6,8 +6,21 @@
 
   text-align: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $table-width) {
     text-align: left;
     padding-top: 32px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

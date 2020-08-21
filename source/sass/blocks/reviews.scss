@@ -160,11 +160,35 @@
   background-color: $basicWhite;
   border: 1px solid $shadowGrey;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $table-width) {
     margin-top: 15px;
     border: none;
 
     width: auto;
+
+    &:active {
+      opacity: 0.3;
+  }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    border: none;
+
+    width: auto;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+  }
   }
 }
 
