@@ -3,11 +3,9 @@
 
   margin: 0;
 
-
   &--nojs {
     min-height: 395px;
   }
-
 
   @media (min-width: $table-width) {
     display: grid;
@@ -15,6 +13,8 @@
     grid-template-columns: 220px 1fr;
 
     position: absolute;
+    top: 0;
+    left: 0;
 
     width: 100%;
   }
@@ -30,12 +30,12 @@
 }
 
 .main-nav__logo {
-
   @media (min-width: $table-width) {
     grid-column: 1/2;
 
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 0;
   }
 }
 
@@ -66,8 +66,8 @@
 
 .main-nav__toggle-wrapper {
   position: absolute;
-  top: 32px;
-  right: 20px;
+  top: 29px;
+  right: 31px;
 }
 
 
@@ -75,6 +75,7 @@
   .main-nav--closed .main-nav__user-list {
     display: none;
   }
+
   .main-nav--closed .main-nav__site-list {
     display: none;
   }
@@ -109,8 +110,8 @@
   background-color: $basicWhite;
   border: none;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     display: block;
     position: absolute;
@@ -123,23 +124,21 @@
     background-color: $basicDark;
   }
 
-  &:before {
+  &::before {
     transform: rotate(45deg);
   }
 
-  &:after {
+  &::after {
     transform: rotate(-45deg);
   }
-
 }
 
-.main-nav--closed .main-nav__toggle:before {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   right: 0;
-
 
   /*временно*/
   width: 20px;

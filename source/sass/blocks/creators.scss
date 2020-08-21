@@ -1,8 +1,23 @@
 .creators {
   display: flex;
+  justify-content: center;
+  align-items: start;
+
+  border-top: 1px solid $footerDecorGrey;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  @media (min-width: $table-width) {
+    padding-top: 41px;
+
+    border-top: none;
+  }
 }
 
 .creators__title {
+  margin-top: 7px;
+
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;

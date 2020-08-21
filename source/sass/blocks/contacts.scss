@@ -1,10 +1,29 @@
 .contacts {
+  @media (min-width: $table-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 26px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-end;
     position: relative;
 
     margin: 0 auto;
+    padding-bottom: 106px;
 
     width: 1050px;
   }
@@ -13,27 +32,30 @@
 .contacts__content-wrapper {
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-left: 175px;
+    padding-left: 173px;
 
     max-width: 350px;
   }
 }
 
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: $basicBlack;
 
   @media (min-width: $table-width) {
+    padding-top: 87px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-top: 130px;
-    margin-bottom: 36px;
+    margin-top: 83px;
+    margin-bottom: 0;
     font-size: 53px;
     line-height: 57px;
   }
@@ -43,33 +65,67 @@
   display: flex;
   flex-wrap: wrap;
 
-  font-size: 15px;
-  line-height: 30px;
+
   color: $basicDark;
 
   @media (min-width: $table-width) {
     display: flex;
-    justify-content: space-between;
+
+
+    margin-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+
+    margin-top: 16px;
+  }
+}
+
+.contacts__list-wrapper {
+  display: flex;
+
+  margin-top: 13px;
+  width: 100%;
+
+  @media (min-width: $table-width) {
+    width: calc(100% / 2);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: auto;
+
+    &:nth-child(2) {
+      margin-top: 6px;
+    }
+  }
+}
+
+.contacts__list-wrapper:nth-child(1) {
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .contacts__list-title {
-  margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 30px;
 
-  width: 30%;
+  min-width: 66px;
 
   @media (min-width: $table-width) {
+    font-size: 17px;
+    line-height: 30px;
     width: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-right: 25px;
+
     margin-bottom: 0;
   }
 }
@@ -84,12 +140,15 @@
 
 .contacts__list-description {
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
+  padding-left: 10px;
 
-  width: 70%;
+  font-size: 15px;
+  line-height: 30px;
 
   @media (min-width: $table-width) {
+    font-size: 17px;
+    line-height: 30px;
     width: auto;
   }
 
@@ -101,11 +160,7 @@
 
 .contacts__list-description:last-of-type {
   margin-bottom: 0;
-
-  @media (min-width: $table-width) {
-    max-width: 230px;
-    margin-right: 40px;
-  }
+  padding-right: 20px;
 
   @media (min-width: $desktop-width) {
     max-width: 230px;
@@ -119,11 +174,17 @@
   display: inline-block;
 
   font-size: 15px;
-  line-height: 30px;
+  line-height: 20px;
   color: var(--basicDark);
   vertical-align: middle;
 
   border-bottom: 1px solid $basicGreen;
+
+  @media (min-width: $table-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;
@@ -132,17 +193,12 @@
 }
 
 .contacts__map {
+  margin-top: 15px;
+
   @media (min-width: $table-width) {
-    margin-top: 39px;
+    margin-top: 90px;
     /*Временно*/
     width: 100%;
-    height: 457px;
-  }
-
-  @media (min-width: $table-width) {
-
-    /*Временно*/
-    width: 527px;
     height: 457px;
   }
 }
@@ -150,8 +206,7 @@
 .contacts__button {
   display: inline-block;
 
-  margin-top: 39px;
-  margin-bottom: 39px;
+  margin-top: 34px;
 
   width: 100%;
 
@@ -161,9 +216,11 @@
   box-sizing: border-box;
 
   @media (min-width: $table-width) {
-    max-width: 230px;
+    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
+
+    max-width: 230px;
   }
 }
 
@@ -176,7 +233,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 104px;
     left: 175px;
     max-width: 230px;
   }

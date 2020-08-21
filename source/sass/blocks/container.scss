@@ -11,9 +11,9 @@
     margin: 0 auto;
 
     &--header {
-    width: 668px;
-    margin: 0 auto;
-  }
+      width: 668px;
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -21,9 +21,8 @@
     margin: 0 auto;
 
     &--header {
-    width: 1050px;
-    margin: 0 auto;
-  }
+      width: 1050px;
+      margin: 0 auto;
+    }
   }
 }
-

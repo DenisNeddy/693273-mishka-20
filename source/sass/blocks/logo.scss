@@ -2,7 +2,12 @@
   display: block;
 
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   text-align: center;
+
+  @media (min-width: $table-width) {
+    text-align: left;
+    padding-top: 32px;
+  }
 }

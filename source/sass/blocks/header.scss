@@ -12,10 +12,14 @@
 }
 
 .header__bg-wrapper {
-  min-height: 88px;
+  min-height: 78px;
   background-color: $basicWhite;
 
   box-shadow: inset 0 -1px 0 $shadowGrey;
+
+  @media (min-width: $table-width) {
+    min-height: 89px;
+  }
 }
 
 .header__action-wrapper {
@@ -23,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 108px;
+    top: 104px;
     left: 0;
 
     width: 100%;
@@ -41,7 +45,7 @@
   @media (min-width: $table-width) {
     display: block;
     position: absolute;
-    top: 108px;
+    top: 104px;
     right: 0;
   }
 

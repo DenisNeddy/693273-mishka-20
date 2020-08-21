@@ -1,11 +1,13 @@
 .inner-product-cart {
-  padding-bottom: 27px;
+  padding-bottom: 23px;
 
   border: 1px solid $shadowGrey;
 
   @media (min-width: $table-width) {
     display: flex;
     flex-direction: row;
+
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +25,7 @@
 .inner-product-cart__title-link {
   display: inline-block;
 
-  margin-top: 25px;
+  margin-top: 19px;
   margin-left: 28px;
 
   font-size: 17px;
@@ -33,6 +35,8 @@
   color: $basicDark;
 
   @media (min-width: $table-width) {
+    margin-top: 27px;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -46,7 +50,7 @@
 .inner-product-cart__property {
   display: block;
 
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 28px;
 
 
@@ -54,6 +58,7 @@
 
   font-size: 13px;
   line-height: 30px;
+
 
   @media (min-width: $table-width) {
     font-size: 15px;
@@ -74,6 +79,17 @@
   display: flex;
   justify-content: space-between;
 
+  margin-top: 18px;
+  margin-left: 28px;
+  margin-right: 25px;
+
+  border-top: 1px solid $shadowGrey;
+
+  @media (min-width: $table-width) {
+    margin-top: auto;
+    margin-bottom: 23px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: auto;
   }
@@ -83,7 +99,6 @@
   display: inline-block;
 
   margin-top: 23px;
-  margin-left: 28px;
 
   font-size: 15px;
   line-height: 24px;
@@ -106,25 +121,37 @@
 .inner-product-cart__buy {
   display: inline-block;
 
-  margin-top: 23px;
-  margin-right: 27px;
+  margin-top: 18px;
 
   width: 20px;
   height: 19px;
 
   vertical-align: middle;
+  opacity: 0.2;
+  fill: $basicBlack;
 
-  /*временные стили*/
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: $basicGreen;
+  }
 
-  background-color: $basicGreen;
-  border-radius: 3px;
+  &:active {
+    opacity: 0.2;
+    fill: $basicGreen;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
 }
 
 .inner-product-cart__content-wrapper {
   @media (min-width: $table-width) {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 5px);
     margin-left: auto;
-    margin-top: 489px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,9 +160,31 @@
     justify-content: flex-start;
 
     margin-left: 0;
-    margin-top: 489px;
+
 
     width: 100%;
     min-height: 197px;
+  }
+}
+
+.inner-product-cart__image {
+  @media (min-width: $table-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+    width: 316px;
+    height: 462px;
   }
 }

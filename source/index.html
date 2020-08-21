@@ -26,8 +26,8 @@
               </svg>
             </a>
             <div class="main-nav__toggle-wrapper">
-            <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-            </button>
+              <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+              </button>
             </div>
             <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
@@ -46,7 +46,7 @@
               </form>
               <div class="user-list__shop-basket">
                 <a href="#" class="user-list__link">
-                  Корзина:<span class="user-list__basket-value">пока пуста</span>
+                  Корзина:<span class="user-list__basket-value"> пока пуста</span>
                 </a>
               </div>
             </div>
@@ -72,8 +72,8 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__main-title">Милые штучки ручной<br> работы для дома</h1>
-      <section class="popular">
+      <h1 class="page-main__main-title">Милые штуки ручной<br> работы для дома</h1>
+      <section class="page-main__popular popular">
         <div class="popular__container">
           <h2 class="visually-hidden">Популярные категории</h2>
           <ul class="popular__list">
@@ -95,14 +95,20 @@
               <span class="product-cart__rank">Товар недели</span>
             </div>
             <div class="product-cart__content-wrapper">
-            <p class="product-cart__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="product-cart__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
             <dl class="product-cart__property">
-              <dt class="product-cart__property-title">Цвет:</dt>
-              <dd class="product-cart__property-description">«Тиффани»/серый</dd>
-              <dt class="product-cart__property-title">Диаметр:</dt>
-              <dd class="product-cart__property-description">25 см</dd>
-              <dt class="product-cart__property-title">Высота:</dt>
-              <dd class="product-cart__property-description">15 см</dd>
+              <div class="product-cart__property-group">
+                <dt class="product-cart__property-title">Цвет:</dt>
+                <dd class="product-cart__property-description">«Тиффани»/серый</dd>
+              </div>
+              <div class="product-cart__property-group">
+                <dt class="product-cart__property-title">Диаметр:</dt>
+                <dd class="product-cart__property-description">25 см</dd>
+              </div>
+              <div class="product-cart__property-group">
+                <dt class="product-cart__property-title">Высота:</dt>
+                <dd class="product-cart__property-description">15 см</dd>
+              </div>
             </dl>
             <a href="#" aria-label="Переход в карточку товара">
               <img class="product-cart__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фотография вязанных корзин">
@@ -113,7 +119,7 @@
           </article>
         </div>
       </section>
-      <section class="about">
+      <section class="page-main__about about">
         <div class="about__wrapper container">
           <h2 class="about__title">Коротко о нас:</h2>
           <div class="about__list-wrapper">
@@ -142,7 +148,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="page-main__reviews reviews">
         <div class="reviews__wrapper container">
           <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list">
@@ -155,11 +161,15 @@
                   <a href="#" class="reviews__author-contacts">@misssssiskras</a>
                 </div>
                 <div class="reviews__pagination-wrapper">
-                <button type="button" class="reviews__pagination reviews__pagination--back">
-                  <span class="visually-hidden">Назад</span>
+                <button type="button" class="reviews__pagination reviews__pagination--back" aria-label="Назад">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                      <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+                    </svg>
                 </button>
-                <button type="button" class="reviews__pagination reviews__pagination--next">
-                  <span class="visually-hidden">Вперед</span>
+                <button type="button" class="reviews__pagination reviews__pagination--next" arial-label="Вперед">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+                  </svg>
                 </button>
                 </div>
                 <a href="#" class="reviews__button button">Написать</a>
@@ -172,14 +182,18 @@
         <div class="contacts__content-wrapper container">
             <h2 class="contacts__title">Контакты</h2>
             <dl class="contacts__list">
-              <dt class="contacts__list-title">email:</dt>
-              <dd class="contacts__list-description">
-                <a href="mailto:info@mimimishkashop.ru" class="contacts__list-email">info@mimimishkashop.ru</a>
-              </dd>
-              <dt class="contacts__list-title">адрес:</dt>
-              <dd class="contacts__list-description">
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-              </dd>
+              <div class="contacts__list-wrapper">
+                <dt class="contacts__list-title">e-mail:</dt>
+                <dd class="contacts__list-description">
+                  <a href="mailto:info@mimimishkashop.ru" class="contacts__list-email">info@mimimishkashop.ru</a>
+                </dd>
+              </div>
+              <div class="contacts__list-wrapper">
+                <dt class="contacts__list-title">адрес:</dt>
+                <dd class="contacts__list-description">
+                  г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+                </dd>
+              </div>
             </dl>
         </div>
         <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта с адресом нашей компании">

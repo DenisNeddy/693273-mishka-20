@@ -7,6 +7,9 @@
   margin: 0;
   padding-top: 73px;
   padding-bottom: 120px;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-height: 373px;
 
   font-size: 27px;
   line-height: 30px;
@@ -17,14 +20,14 @@
   background-color: $bgGreyPopular;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -18px;
 
   @media (min-width: $table-width) {
     padding-top: 155px;
     padding-bottom: 372px;
 
     font-size: 43px;
-    line-height: 56px;
+    line-height: 50px;
     text-align: center;
 
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -46,10 +49,40 @@
   }
 }
 
-.page-main__contacts {
-  margin-top: 38px;
+.page-main__product-cart {
+  margin-top: 31px;
+  padding-bottom: 36px;
+}
+
+.page-main__about {
+  padding-top: 34px;
+  padding-bottom: 28px;
+
+  @media (min-width: $table-width) {
+    margin-top: 11px;
+  }
+}
+
+.page-main__reviews {
+  margin-top: 26px;
+  padding-bottom: 45px;
+
+  @media (min-width: $table-width) {
+    margin-top: 51px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 140px;
+    margin-top: 48px;
+    padding-bottom: 45px;
+  }
+}
+
+.page-main__contacts {
+  margin-top: 40px;
+  margin-bottom: 39px;
+
+  @media (min-width: $table-width) {
+    margin-top: 26px;
+    margin-bottom: 55px;
   }
 }

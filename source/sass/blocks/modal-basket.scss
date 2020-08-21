@@ -1,18 +1,45 @@
 .modal-basket {
+
+  /*Временно*/
+
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  min-width: 320px;
+  padding-bottom: 48px;
+
   text-align: center;
 
   background-color: $basicWhite;
 
   box-shadow: 0 5px 10px $modalShadow;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $table-width) {
+    width: 566px;
+  }
 }
 
 .modal-basket__wrapper {
+  width: 260px;
   margin: 0 auto;
 
-  max-width: 260px;
+  @media (min-width: $table-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    margin: 0 auto;
+  }
 }
 
 .modal-basket__title {
+  margin: 0;
+  margin-top: 28px;
   padding-right: 50px;
   padding-left: 51px;
 
@@ -22,6 +49,18 @@
   text-transform: uppercase;
   color: $basicBlack;
   text-align: center;
+
+  @media (min-width: $table-width) {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .modal-basket__description {
@@ -39,11 +78,15 @@
   margin-top: 22px;
   padding: 0;
 
+  width: 100%;
+
   list-style: none;
 }
 
 .modal-basket__size-item {
-  margin-right: 10px;
+  margin-right: 5%;
+
+  width: 30%;
 }
 
 .modal-basket__size-item:last-child {
@@ -51,7 +94,8 @@
 }
 
 .modal-basket__size-button {
-  width: 80px;
+  display: block;
+  width: 100%;
   height: 50px;
 
   font-size: 17px;
@@ -71,14 +115,13 @@
 }
 
 .modal-basket__button {
-  display: inline-block;
 
   margin-top: 31px;
-  margin-bottom: 48px;
+  min-width: 90%;
 
   width: 100%;
 
-  vertical-align: middle;
+
   text-align: center;
   color: $basicWhite;
 

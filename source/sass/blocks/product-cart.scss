@@ -2,13 +2,13 @@
   @media (min-width: $table-width) {
     position: relative;
 
-    padding-top: 31px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding-top: 115px;
+    padding-top: 87px;
   }
 }
 
@@ -41,7 +41,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 43px;
+    margin-left: 30px;
 
     z-index: 1000;
   }
@@ -57,6 +57,10 @@
   color: $basicGreen;
 
   @media (min-width: $table-width) {
+    margin-top: 0;
+    margin-right: 14px;
+    font-size: 17px;
+    line-height: 17px;
     max-width: 100px;
     text-align: center;
   }
@@ -68,13 +72,17 @@
 }
 
 .product-cart__description {
-
-  font-size: 17px;
-  line-height: 30px;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 24px;
   color: $basicDark;
 
   @media (min-width: $table-width) {
     margin-top: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,41 +92,51 @@
 
 .product-cart__property {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  font-size: 15px;
+  line-height: 24px;
 
   @media (min-width: $table-width) {
-    margin-top: 11px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 23px;
+    margin-top: 52px;
   }
 }
 
-.product-cart__property-title {
-  padding-top: 16px;
-  padding-bottom: 16px;
+.product-cart__property-group {
+  display: flex;
 
-  width: 30%;
+  padding-top: 6px;
+  padding-bottom: 10px;
 
   border-bottom: 1px solid $shadowGrey;
+}
+
+.product-cart__property-title {
+  width: calc(100% * 0.3);
 }
 
 .product-cart__property-description {
   margin: 0;
   padding: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 30px;
 
-  width: 70%;
+  width: calc(100% * 0.7);
 
-  border-bottom: 1px solid $shadowGrey;
+  @media (min-width: $table-width) {
+    padding-left: 13px;
+  }
 }
 
 .product-cart__price {
   display: block;
 
-  margin-top: 26px;
+  margin-top: 16px;
 
   font-size: 17px;
   line-height: 24px;
@@ -134,7 +152,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 81px;
+    margin-top: 109px;
 
     font-size: 20px;
     line-height: 24px;
@@ -152,12 +170,18 @@
   vertical-align: middle;
 
   box-sizing: border-box;
+
+  @media (min-width: $table-width) {
+    margin-top: 35px;
+  }
 }
 
 .product-cart__image {
+  margin-top: 12px;
+
   @media (min-width: $table-width) {
     position: absolute;
-    top: 167px;
+    top: 94px;
     right: 0;
 
     /*временные размеры*/
@@ -167,7 +191,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 54px;
+    top: 16px;
     right: 0;
 
     /*временные размеры*/
