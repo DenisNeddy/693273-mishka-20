@@ -62,14 +62,14 @@
   box-sizing: border-box;
 
   &:active {
-      background-color: $specialGreen;
-    }
+    background-color: $specialGreen;
+  }
 
 
   @media (min-width: $table-width) {
     width: 50%;
 
-     &:active {
+    &:active {
       background-color: $specialGreen;
     }
   }
@@ -106,7 +106,7 @@
   @media (min-width: $table-width) {
     padding-left: 37px;
     padding-bottom: 48px;
-    padding-left: 0;
+    padding-right: 0;
 
     font-size: 20px;
     line-height: 30px;
@@ -115,7 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-right: 0;
 
     width: calc(100% - 37px);
   }

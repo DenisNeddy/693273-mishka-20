@@ -69,7 +69,7 @@
     border-right: 1px solid $opacityBlack01;
   }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-right: 32px;
     padding-top: 0;
@@ -119,8 +119,6 @@
   padding-top: 30px;
   padding-bottom: 27px;
 
-
-
   max-width: 245px;
 
   font-size: 17px;
@@ -158,9 +156,9 @@
 
 
   @media (min-width: $table-width) {
-     margin-right: 26px;
+    margin-right: 26px;
 
-     &:active {
+    &:active {
       opacity: 0.2;
     }
   }
@@ -178,7 +176,4 @@
       opacity: 0.2;
     }
   }
-
 }
-
-

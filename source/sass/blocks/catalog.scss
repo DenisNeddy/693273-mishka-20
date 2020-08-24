@@ -54,6 +54,16 @@
   @media (min-width: $desktop-width) {
     margin-right: 48px;
     margin-bottom: 57px;
+
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px $shadowCart;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $shadowCart;
+    }
   }
 }
 

@@ -200,8 +200,8 @@
   }
 
   &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
+    opacity: 0.3;
+    border-color: $basicBlack;
   }
 
   @media (min-width: $table-width) {
@@ -230,7 +230,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &:hover::before,
     &:focus::before {
       border-color: $formGreen;
@@ -302,8 +301,8 @@
   }
 
   &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
+    opacity: 0.3;
+    border-color: $basicBlack;
   }
 
   @media (min-width: $table-width) {
@@ -382,7 +381,6 @@
   }
 }
 
-
 .order-form__input-wrapper {
   display: flex;
   flex-direction: column;
@@ -412,9 +410,16 @@
   background-color: transparent;
   border: none;
 
+  outline: none;
+
   box-shadow: inset 0 -2px 0 $basicBlack;
 
   box-sizing: border-box;
+
+  &:active {
+    color: $basicBlack;
+    box-shadow: inset 0 -2px 0 $basicGreen;
+  }
 
   &::placeholder {
     font-size: 17px;
@@ -428,6 +433,12 @@
     width: 100%;
     padding-left: 19px;
 
+
+    &:active {
+      color: $basicBlack;
+      box-shadow: inset 0 -2px 0 $basicGreen;
+    }
+
     &::placeholder {
       font-size: 19px;
       font-family: inherit;
@@ -440,11 +451,21 @@
     width: 100%;
     padding-left: 19px;
 
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 -2px 0 $basicGreen;
+    }
+
     &::placeholder {
       font-size: 19px;
       font-family: inherit;
       line-height: 18px;
       color: $opacityBlack03;
+    }
+
+    &:active {
+      color: $basicBlack;
+      box-shadow: inset 0 -2px 0 $basicGreen;
     }
   }
 }
@@ -474,7 +495,6 @@
   }
 }
 
-
 .order-form__textarea {
   margin-top: 13px;
   padding-top: 16px;
@@ -487,6 +507,11 @@
   border: 2px solid $basicBlack;
 
   box-sizing: border-box;
+
+
+  &:active {
+    border-color: $basicGreen;
+  }
 
   &::placeholder {
     font-size: 17px;
@@ -512,6 +537,14 @@
   @media (min-width: $desktop-width) {
     max-width: 700px;
 
+    &:hover,
+    &:focus {
+      border-color: $basicGreen;
+    }
+
+    &:active {
+      border-color: $basicGreen;
+    }
 
     &::placeholder {
       font-size: 19px;

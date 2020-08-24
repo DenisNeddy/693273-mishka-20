@@ -143,8 +143,26 @@
   left: 50%;
 
   border: none;
+
   background-color: transparent;
+
   transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3;
+    }
+  }
 }
 
 .video-cart__button {
