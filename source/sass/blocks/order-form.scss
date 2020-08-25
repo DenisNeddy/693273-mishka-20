@@ -13,7 +13,7 @@
     margin-top: 18px;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     &:first-child {
       padding-bottom: 30px;
     }
@@ -37,12 +37,12 @@
 }
 
 .order-form__fieldset:nth-child(3) .order-form__legend {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 53px;
     width: 220px;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 53px;
     width: 196px;
     padding-right: 15px;
@@ -50,7 +50,7 @@
 }
 
 .order-form__fieldset:nth-child(4) .order-form__legend {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 69px;
     width: 224px;
   }
@@ -64,8 +64,9 @@
 }
 
 .order-form__fieldset:nth-child(5) .order-form__legend {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 40px;
+        width: 224px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +77,7 @@
 }
 
 .order-form__fieldset:nth-child(6) .order-form__legend {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 23px;
   }
 
@@ -87,13 +88,13 @@
 }
 
 .order-form__fieldset:nth-child(4) .order-form__contacts-group {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 53px;
   }
 }
 
 .order-form__fieldset:nth-child(5) .order-form__contacts-group {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 23px;
   }
 }
@@ -102,7 +103,7 @@
   display: flex;
   margin: 0;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: calc(93% / 2);
   }
 
@@ -112,7 +113,7 @@
 }
 
 .order-form__radio-group .order-form__checkbox-wrapper {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
 
     &:nth-child(1) {
@@ -141,7 +142,7 @@
 
   z-index: 100;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 65px;
     padding-right: 0;
     align-self: flex-start;
@@ -167,7 +168,7 @@
   font-weight: 700;
   color: $basicBlack;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
   }
@@ -204,7 +205,7 @@
     border-color: $basicBlack;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 23px;
     padding-bottom: 23px;
     padding-left: 81px;
@@ -256,7 +257,7 @@
 
   border-radius: 50%;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     top: 24px;
     left: 16px;
     width: 22px;
@@ -267,13 +268,13 @@
 .order-form__checkbox-group .order-form__checkbox-wrapper {
   margin-top: 19px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     &:nth-child(odd) {
       margin-right: auto;
     }
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     &:nth-child(odd) {
       margin-right: 0;
     }
@@ -305,7 +306,7 @@
     border-color: $basicBlack;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 83px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -370,7 +371,7 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 22px;
     left: 12px;
@@ -387,7 +388,7 @@
 
   margin-top: 22px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
   }
@@ -429,7 +430,7 @@
     color: $opacityBlack03;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
     padding-left: 19px;
 
@@ -475,8 +476,14 @@
   width: 100%;
 }
 
+.order-form__phone-input:hover + .order-form__input-icon,
+.order-form__phone-input:focus + .order-form__input-icon {
+  fill: $basicGreen;
+  opacity: 1;
+}
+
 .order-form__text-input {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
 
     &::placeholder {
@@ -496,17 +503,18 @@
 }
 
 .order-form__textarea {
-  margin-top: 13px;
+  margin-top: 18px;
   padding-top: 16px;
   padding-left: 15px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
   width: 100%;
-  min-height: 142px;
+  min-height: 143px;
   border: 2px solid $basicBlack;
 
   box-sizing: border-box;
+  outline: none;
 
 
   &:active {
@@ -519,7 +527,7 @@
     line-height: 18px;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     max-height: 144px;
 
     margin-top: 0;
@@ -560,7 +568,7 @@
   font-size: 14px;
   line-height: 16px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
   }
@@ -575,7 +583,7 @@
 
   width: 100%;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     order: -1;
     max-width: 230px;
   }
@@ -591,7 +599,7 @@
 }
 
 .order-form__button-wrapper {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -622,7 +630,7 @@
     background-color: $basicGreen;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
 
     &::before {
@@ -640,7 +648,7 @@
 }
 
 .order-form__fieldset:nth-child(2) {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     background-color: $bgGrey;
   }
 
@@ -650,7 +658,7 @@
 }
 
 .order-form__checkbox-group {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -669,7 +677,7 @@
 }
 
 .order-form__name-group {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
 
@@ -680,7 +688,7 @@
 }
 
 .order-form__name-group .order-form__label {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 17px;
     padding-right: 26px;
   }
@@ -693,7 +701,7 @@
 
 
 .order-form__name-group .order-form__input-wrapper {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
 
     &:nth-child(1) {
@@ -717,8 +725,9 @@
 
 .order-form__contacts-group {
   margin: 0;
+  position: relative;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
   }
 
@@ -729,8 +738,26 @@
   }
 }
 
+.order-form__input-icon {
+  position: absolute;
+  top: 9px;
+  right: 6px;
+  fill: $basicBlack;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+  right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 13px;
+    right: 180px;
+  }
+}
+
 .order-form__fieldset:nth-child(n+4):nth-child(-n+5) {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     background-color: $bgGrey;
   }
@@ -742,7 +769,7 @@
 }
 
 .order-form__fieldset:nth-child(6) {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 36px;
   }
 
@@ -750,3 +777,5 @@
     padding-top: 38px;
   }
 }
+
+

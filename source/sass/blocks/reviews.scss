@@ -1,5 +1,5 @@
 .reviews {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
@@ -13,7 +13,7 @@
 }
 
 .reviews__wrapper {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
   }
 
@@ -35,7 +35,7 @@
   font-weight: 700;
   color: $basicBlack;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 88px;
     font-size: 43px;
     line-height: 50px;
@@ -54,7 +54,7 @@
 
   margin-top: 14px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 37px;
   }
 }
@@ -67,7 +67,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -85,7 +85,7 @@
 .reviews__description {
   margin: 0;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
 
     font-size: 17px;
     line-height: 30px;
@@ -100,7 +100,7 @@
 .reviews__author-wrapper {
   margin-top: 31px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
 
@@ -126,7 +126,7 @@
   font-style: normal;
   color: $basicBlack;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 50px;
 
     font-size: 18px;
@@ -147,7 +147,7 @@
   font-weight: 400;
   color: $basicDark;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 5px;
   }
 }
@@ -160,11 +160,13 @@
   background-color: $basicWhite;
   border: 1px solid $shadowGrey;
 
+  cursor: pointer;
+
   &:active {
     opacity: 0.3;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 15px;
     border: none;
 
@@ -195,7 +197,7 @@
 .reviews__pagination:nth-child(1) {
   margin-right: -1px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 25px;
   }
 }
@@ -204,7 +206,7 @@
   display: flex;
   width: 100%;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     justify-content: flex-end;
     margin-top: 54px;
 
@@ -235,7 +237,9 @@
 
   box-sizing: border-box;
 
-  @media (min-width: $table-width) {
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 42px;
     right: 0;

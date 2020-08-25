@@ -8,7 +8,7 @@
   padding-top: 22px;
   padding-bottom: 24px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 41px;
 
     border-top: none;
@@ -26,4 +26,31 @@
 
 .creators__logo {
   margin-left: 27px;
+
+  fill: $basicGreen;
+
+  &:active {
+    fill: $specialGreenDark;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:active {
+      fill: $specialGreenDark;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      fill: $specialGreenDark;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: $specialGreenDark;
+      opacity: 0.3;
+    }
+  }
 }
