@@ -49,7 +49,7 @@
   color: $basicBlack;
 
   @media (min-width: $tablet-width) {
-    padding-top: 74px;
+    padding-top: 43px;
 
     font-size: 43px;
     line-height: 50px;
@@ -58,7 +58,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 35px;
     margin-left: 175px;
-    padding-top: 90px;
+    padding-top: 20px;
 
     font-size: 53px;
     line-height: 57px;
@@ -140,6 +140,7 @@
 }
 
 .about__item-title {
+  position: relative;
   margin: 0;
   padding-top: 84px;
 
@@ -147,6 +148,7 @@
   line-height: 20px;
   font-weight: 700;
   color: $basicBlack;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -157,5 +159,151 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 22px;
+  }
+}
+
+.about__item-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 8px;
+
+  width: 32px;
+  height: 37px;
+
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+  }
+}
+
+.about__item-icon--flower {
+  padding-right: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+}
+
+.about__item-icon--money {
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 31px;
+    left: 0;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 44px;
+    }
+  }
+}
+
+.about__item-icon--heart {
+  padding-right: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 34px;
+    left: 8px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 48px;
+    }
+  }
+}
+
+.about__item-icon--ball {
+  padding-right: 10px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 31px;
+    left: 3px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 43px;
+    }
+  }
+}
+
+.about__item-icon--rocket {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 33px;
+    left: -5px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 46px;
+    }
+  }
+}
+
+.about__item-icon--gift {
+  padding-right: 10px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 3px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 46px;
+    }
   }
 }

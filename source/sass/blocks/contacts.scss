@@ -65,12 +65,10 @@
   display: flex;
   flex-wrap: wrap;
 
-
   color: $basicDark;
 
   @media (min-width: $tablet-width) {
     display: flex;
-
 
     margin-top: 36px;
   }
@@ -183,9 +181,7 @@
   &:active {
     color: $basicGreen;
     border-bottom: 1px solid transparent;
-    }
-
-
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -259,5 +255,16 @@
     bottom: 104px;
     left: 175px;
     max-width: 230px;
+  }
+}
+
+.contacts__map iframe {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 90px;
+    /*Временно*/
+    width: 100%;
+    height: 457px;
   }
 }

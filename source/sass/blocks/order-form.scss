@@ -66,7 +66,7 @@
 .order-form__fieldset:nth-child(5) .order-form__legend {
   @media (min-width: $tablet-width) {
     margin-top: 40px;
-        width: 224px;
+    width: 224px;
   }
 
   @media (min-width: $desktop-width) {
@@ -722,7 +722,6 @@
   }
 }
 
-
 .order-form__contacts-group {
   margin: 0;
   position: relative;
@@ -747,7 +746,7 @@
 
   @media (min-width: $tablet-width) {
     top: 13px;
-  right: 23px;
+    right: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -777,5 +776,3 @@
     padding-top: 38px;
   }
 }
-
-

@@ -52,6 +52,10 @@
 .page-main__product-cart {
   margin-top: 31px;
   padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .page-main__about {

@@ -31,7 +31,6 @@
   }
 }
 
-
 .user-list__shop-basket {
   margin-top: -3px;
 
@@ -51,7 +50,6 @@
 
 
   max-width: 260px;
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -141,7 +139,6 @@
 
     padding-top: 35px;
 
-
     font-size: 17px;
     line-height: 24px;
 
@@ -157,7 +154,6 @@
   }
 }
 
-
 .user-list__link:active .user-list__basket-icon {
   @media (min-width: $desktop-width) {
     fill: $basicGreen;
@@ -169,7 +165,6 @@
   margin-right: 15px;
 
   opacity: 0.2;
-
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
@@ -193,5 +188,3 @@
     }
   }
 }
-
-
