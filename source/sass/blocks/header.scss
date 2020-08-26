@@ -20,6 +20,10 @@
   @media (min-width: $tablet-width) {
     min-height: 89px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 94px;
+  }
 }
 
 .header__action-wrapper {
