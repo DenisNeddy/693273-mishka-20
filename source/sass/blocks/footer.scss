@@ -30,14 +30,32 @@
 .footer__logo {
   display: none;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: block;
     padding-right: 70px;
+
+    &:active {
+      fill: $basicGreen;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     padding-right: 70px;
+
+
+    &:hover,
+    &:focus {
+      fill: $basicGreen;
+    }
+
+    &:active {
+      fill: $basicGreen;
+      opacity: 0.3;
+    }
   }
 }
 
