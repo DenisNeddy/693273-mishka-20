@@ -6,8 +6,25 @@
 
   text-align: center;
 
-  @media (min-width: $table-width) {
+  cursor: pointer;
+}
+
+.logo[href] {
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
     text-align: left;
     padding-top: 32px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

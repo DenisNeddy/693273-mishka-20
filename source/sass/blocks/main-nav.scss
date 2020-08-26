@@ -7,7 +7,7 @@
     min-height: 395px;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: 88px 60px;
     grid-template-columns: 220px 1fr;
@@ -30,7 +30,7 @@
 }
 
 .main-nav__logo {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/2;
 
     padding-top: 32px;
@@ -40,7 +40,7 @@
 }
 
 .main-nav__site-list {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
 
@@ -55,7 +55,7 @@
 }
 
 .main-nav__user-list {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 2/3;
   }
 
@@ -101,7 +101,7 @@
   background-color: $basicWhite;
   cursor: pointer;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -149,7 +149,7 @@
   box-shadow: 0 6px 0 0  $basicDark, 0 12px 0 0  $basicDark;
 
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 

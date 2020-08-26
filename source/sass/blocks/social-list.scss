@@ -10,7 +10,7 @@
 
   list-style: none;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 28px;
   }
 }
@@ -24,34 +24,28 @@
 }
 
 .social__link {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
+  fill: $basicBlack;
 
-  vertical-align: middle;
-
-  background-image: url("../img/icon-insta.svg");
-
-  border-radius: 3px;
-
-  &--instagram {
-    width: 22px;
-    height: 21px;
-
-    background-image: url("../img/icon-insta.svg");
+  &:active {
+    fill: $specialGreenDark;
   }
 
-  &--facebook {
-    width: 15px;
-    height: 28px;
-
-    background-image: url("../img/icon-fb.svg");
+  @media (min-width: $tablet-width) {
+    &:active {
+      fill: $specialGreenDark;
+      opacity: 0.3;
+    }
   }
 
-  &--twitter {
-    width: 23px;
-    height: 20px;
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      fill: $specialGreenDark;
+    }
 
-    background-image: url("../img/icon-twitter.svg");
+    &:active {
+      fill: $specialGreenDark;
+      opacity: 0.3;
+    }
   }
 }

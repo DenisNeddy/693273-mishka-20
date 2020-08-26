@@ -1,5 +1,5 @@
 .contacts {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     &::before {
@@ -45,7 +45,7 @@
   font-weight: 700;
   color: $basicBlack;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 87px;
 
     font-size: 43px;
@@ -65,12 +65,10 @@
   display: flex;
   flex-wrap: wrap;
 
-
   color: $basicDark;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
-
 
     margin-top: 36px;
   }
@@ -89,7 +87,7 @@
   margin-top: 13px;
   width: 100%;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: calc(100% / 2);
   }
 
@@ -117,7 +115,7 @@
 
   min-width: 66px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     width: auto;
@@ -146,7 +144,7 @@
   font-size: 15px;
   line-height: 30px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     width: auto;
@@ -180,22 +178,43 @@
 
   border-bottom: 1px solid $basicGreen;
 
-  @media (min-width: $table-width) {
+  &:active {
+    color: $basicGreen;
+    border-bottom: 1px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+
+    &:active {
+      color: $basicGreen;
+      border-bottom: 1px solid transparent;
+    }
   }
 
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;
     margin-left: 5px;
+
+    &:hover,
+    &:focus {
+      color: $basicGreen;
+    }
+
+
+    &:active {
+      color: $basicGreen;
+      border-bottom: 1px solid transparent;
+    }
   }
 }
 
 .contacts__map {
   margin-top: 15px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 90px;
     /*Временно*/
     width: 100%;
@@ -215,7 +234,7 @@
 
   box-sizing: border-box;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
@@ -227,7 +246,7 @@
 .contacts__button-wrapper {
   position: relative;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
@@ -236,5 +255,16 @@
     bottom: 104px;
     left: 175px;
     max-width: 230px;
+  }
+}
+
+.contacts__map iframe {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 90px;
+    /*Временно*/
+    width: 100%;
+    height: 457px;
   }
 }

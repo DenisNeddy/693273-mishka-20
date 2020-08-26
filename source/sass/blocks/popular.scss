@@ -1,6 +1,6 @@
 
 .popular {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     background-color: $bgGreyPopular;
 
@@ -26,7 +26,7 @@
 }
 
 .popular__container {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 auto;
 
     width: 668px;
@@ -44,34 +44,96 @@
 .popular__list {
   @include list-reset;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: 100%;
   }
 }
 
 .popular__item {
+  position: relative;
 
   background-color: $basicGreen;
 
   box-sizing: border-box;
 
-  &:hover,
-  &:focus {
+  &:active {
     background-color: $specialGreen;
   }
 
-  @media (min-width: $table-width) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 37px;
+
+    width: 40px;
+    height: 61px;
+
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      top: 28px;
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    width: 62px;
+    height: 62px;
+
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 32px;
+    }
+  }
+
+  &:active::before {
+
+    opacity: 0.1;
+  }
+
+
+  @media (min-width: $tablet-width) {
     width: 50%;
-    padding-right: 160px;
+
+    &:active {
+      background-color: $specialGreen;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 50%;
-    padding-right: 160px;
+
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+      background-color: $specialGreen;
+    }
+
+    &:active {
+      background-color: $specialGreen;
+    }
   }
 }
 
@@ -81,7 +143,6 @@
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
-  padding-right: 160px;
 
   font-size: 19px;
   line-height: 24px;
@@ -89,17 +150,20 @@
   color: $basicWhite;
   vertical-align: middle;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 37px;
-    padding-right: 160px;
     padding-bottom: 48px;
+
 
     font-size: 20px;
     line-height: 30px;
+
+    width: calc(100% - 37px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 160px;
+
+    width: calc(100% - 37px);
   }
 }
 

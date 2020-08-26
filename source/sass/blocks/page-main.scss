@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-position: 50% -18px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 155px;
     padding-bottom: 372px;
 
@@ -52,13 +52,17 @@
 .page-main__product-cart {
   margin-top: 31px;
   padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .page-main__about {
   padding-top: 34px;
   padding-bottom: 28px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 11px;
   }
 }
@@ -67,7 +71,7 @@
   margin-top: 26px;
   padding-bottom: 45px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 51px;
   }
 
@@ -81,7 +85,7 @@
   margin-top: 40px;
   margin-bottom: 39px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 26px;
     margin-bottom: 55px;
   }

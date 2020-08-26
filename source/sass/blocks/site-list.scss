@@ -3,7 +3,7 @@
 
   border-bottom: 1px solid $shadowGrey;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     border-bottom: none;
   }
@@ -35,7 +35,7 @@
 
   box-shadow: inset 0 1px 0 $shadowGrey;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 36px;
 
     box-shadow: none;
@@ -51,7 +51,7 @@
 }
 
 .site-list__item:last-child {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 0;
   }
 
@@ -86,7 +86,7 @@
   color: $basicBlack;
 
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
 

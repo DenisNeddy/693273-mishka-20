@@ -1,5 +1,5 @@
 .catalog {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 67px;
 
@@ -29,7 +29,7 @@
 
   margin-top: 30px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
 
@@ -47,13 +47,23 @@
 .catalog__item {
   margin-bottom: 30px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 48px;
     margin-bottom: 57px;
+
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px $shadowCart;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $shadowCart;
+    }
   }
 }
 

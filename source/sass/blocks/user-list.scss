@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
   }
@@ -26,23 +26,23 @@
     color: $basicDark;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
-
 
 .user-list__shop-basket {
   margin-top: -3px;
 
   box-shadow: inset 0 1px 0 $shadowGrey;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     box-shadow: none;
   }
 }
 
 .user-list__form {
+  display: flex;
   margin: 0 auto;
   margin-top: -2px;
   padding-top: 20px;
@@ -51,40 +51,62 @@
 
   max-width: 260px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @media (min-width: $table-width) {
     margin: 0;
     margin-right: 32px;
-    padding-top: 28px;
+    padding-top: 0;
     padding-bottom: 0;
+
+    width: 82px;
+
+    border-left: 1px solid $opacityBlack01;
+    border-right: 1px solid $opacityBlack01;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 82px;
     border-left: 1px solid $opacityBlack01;
     border-right: 1px solid $opacityBlack01;
   }
 }
 
-.user-list__label {
-  position: relative;
-  padding-left: 42px;
+.user-list__search-button {
+  margin-right: 15px;
+  order: -1;
+  background-color: transparent;
+  border: none;
 
-  @media (min-width: $table-width) {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-left: 20px;
-  }
-}
-
-.user-list__label::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
-
-  background-image: url("../img/icon-search.svg");
+  cursor: pointer;
 
   opacity: 0.2;
+
+  &:active {
+    fill: $basicGreen;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      fill: $basicGreen;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
 }
 
 .user-list__link {
@@ -95,9 +117,7 @@
   padding-top: 30px;
   padding-bottom: 27px;
 
-  padding-left: 45px;
-
-  max-width: 213px;
+  max-width: 245px;
 
   font-size: 17px;
   line-height: 24px;
@@ -113,30 +133,58 @@
     color: $opacityBlack03;
   }
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
 
     padding-top: 35px;
-    padding-left: 52px;
 
-    max-width: auto;
+    font-size: 17px;
+    line-height: 24px;
+
+    max-width: 260px;
   }
 }
 
-.user-list__link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 21px;
-  height: 18px;
+.user-list__link:hover .user-list__basket-icon,
+.user-list__link:focus .user-list__basket-icon {
+  @media (min-width: $desktop-width) {
+    fill: $basicGreen;
+    opacity: 1;
+  }
+}
 
-  background-image: url("../img/icon-cart.svg");
+.user-list__link:active .user-list__basket-icon {
+  @media (min-width: $desktop-width) {
+    fill: $basicGreen;
+    opacity: 0.2;
+  }
+}
+
+.user-list__basket-icon {
+  margin-right: 15px;
+
   opacity: 0.2;
 
-  @media (min-width: $table-width) {
-    top: 37px;
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 29px;
+
+    &:hover,
+    &:focus {
+      fill: $basicGreen;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
   }
 }

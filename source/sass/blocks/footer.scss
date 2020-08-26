@@ -8,7 +8,7 @@
 
   height: 100%;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,7 +30,7 @@
 .footer__logo {
   display: none;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: block;
     padding-right: 70px;
   }
@@ -42,7 +42,7 @@
 }
 
 .footer__social {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     margin-left: auto;
     margin-right: auto;
   }
