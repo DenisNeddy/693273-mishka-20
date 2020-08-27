@@ -21,9 +21,6 @@
     min-height: 89px;
   }
 
-  @media (min-width: $desktop-width) {
-    min-height: 94px;
-  }
 }
 
 .header__action-wrapper {
@@ -49,11 +46,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    top: 104px;
+    top: 108px;
     right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    top: 5px;
   }
 }

@@ -80,6 +80,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .page-main__reviews {
@@ -91,7 +95,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 48px;
+    margin-top: 59px;
     padding-bottom: 45px;
   }
 }
@@ -101,6 +105,12 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 55px;
+  }
+
+
+  @media (min-width: $desktop-width) {
     margin-top: 26px;
     margin-bottom: 55px;
   }

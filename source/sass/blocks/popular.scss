@@ -8,7 +8,7 @@
       content: "";
       display: block;
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
       left: 0;
 
       width: 100%;
@@ -65,11 +65,6 @@
   &:active {
     background-color: $specialGreen;
   }
-
-
-
-
-
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -128,7 +123,6 @@
     }
   }
 
-
   &:active::before {
 
     opacity: 0.1;
@@ -146,7 +140,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-bottom: 40px;
     width: calc(100% - 37px);
   }
 }

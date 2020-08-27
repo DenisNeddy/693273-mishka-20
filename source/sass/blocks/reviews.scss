@@ -13,11 +13,9 @@
 
   @media (min-width: $desktop-width) {
     background-image: none;
-    padding-bottom: 82px;
+    padding-bottom: 67px;
   }
 }
-
-
 
 .reviews__wrapper {
   @media (min-width: $tablet-width) {
@@ -26,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-bottom: 93px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -56,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 175px;
+    padding-top: 78px;
 
     font-size: 53px;
     line-height: 57px;

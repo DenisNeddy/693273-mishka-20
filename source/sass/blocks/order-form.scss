@@ -42,7 +42,7 @@
     width: 220px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 53px;
     width: 196px;
     padding-right: 15px;
@@ -274,7 +274,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &:nth-child(odd) {
       margin-right: 0;
     }
