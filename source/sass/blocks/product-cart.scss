@@ -8,7 +8,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
 
-    padding-top: 87px;
+    padding-top: 95px;
   }
 }
 
@@ -41,7 +41,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 23px;
+    margin-left: 29px;
 
     z-index: 1000;
   }
@@ -191,7 +191,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 0;
 
     /*временные размеры*/

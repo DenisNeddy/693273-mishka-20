@@ -12,3 +12,11 @@
     padding-bottom: 95px;
   }
 }
+
+.page-inner__video-content {
+  margin-bottom: 64px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 103px;
+  }
+}

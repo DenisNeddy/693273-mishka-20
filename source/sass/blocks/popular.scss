@@ -8,7 +8,7 @@
       content: "";
       display: block;
       position: absolute;
-      bottom: -1px;
+      bottom: 0;
       left: 0;
 
       width: 100%;
@@ -66,53 +66,6 @@
     background-color: $specialGreen;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 23px;
-    right: 37px;
-
-    width: 40px;
-    height: 61px;
-
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-
-    opacity: 0.3;
-
-    @media (min-width: $tablet-width) {
-      top: 28px;
-    }
-  }
-
-  &:nth-child(2)::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 25px;
-
-    width: 62px;
-    height: 62px;
-
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-
-    opacity: 0.3;
-
-    @media (min-width: $tablet-width) {
-      top: 31px;
-      right: 32px;
-    }
-  }
-
-  &:active::before {
-
-    opacity: 0.1;
-  }
-
-
   @media (min-width: $tablet-width) {
     width: 50%;
 
@@ -150,6 +103,31 @@
   color: $basicWhite;
   vertical-align: middle;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 37px;
+
+    width: 40px;
+    height: 61px;
+
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      top: 28px;
+    }
+  }
+
+  &:active::before {
+
+    opacity: 0.1;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 37px;
     padding-bottom: 48px;
@@ -162,9 +140,35 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-bottom: 40px;
     width: calc(100% - 37px);
   }
+}
+
+
+.popular__item:nth-child(2) .popular__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+
+  width: 62px;
+  height: 62px;
+
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    top: 31px;
+    right: 32px;
+  }
+}
+
+.popular__item:nth-child(2) .popular__title:active::before {
+  opacity: 0.1;
 }
 
 .popular__item:nth-child(even) {

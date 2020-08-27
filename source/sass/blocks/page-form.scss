@@ -15,7 +15,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: 0;
+      top: -11px;
       left: 0;
 
       width: 100%;
@@ -51,7 +51,7 @@
   @media (min-width: $tablet-width) {
 
     padding-top: 98px;
-    padding-bottom: 67px;
+    padding-bottom: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,7 +68,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding-top: 77px;
+    padding-top: 67px;
 
     font-size: 17px;
     line-height: 30px;
