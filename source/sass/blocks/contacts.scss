@@ -1,4 +1,21 @@
 .contacts {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -45px;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
 
@@ -262,7 +279,7 @@
 .contacts__button {
   display: inline-block;
 
-  margin-top: 34px;
+  margin-top: 31px;
 
   width: 100%;
 
@@ -299,7 +316,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 90px;
+    margin-top: 0;
     /*Временно*/
     width: 100%;
     height: 457px;
