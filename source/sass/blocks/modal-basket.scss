@@ -16,6 +16,7 @@
 
   box-shadow: 0 5px 10px $modalShadow;
   transform: translate(-50%, -50%);
+  z-index: 99999999;
 
   @media (min-width: $tablet-width) {
     width: 566px;
