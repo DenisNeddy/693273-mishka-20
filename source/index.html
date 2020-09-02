@@ -281,6 +281,16 @@
           <a href="#" class="contacts__button button">Напишите нам</a>
         </div>
       </section>
+      <div class="overlay">
+        <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="product-cart__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="фотография вязанных корзин">
+              </picture>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -327,6 +337,7 @@
         </div>
       </div>
     </footer>
+
     <section class="modal-basket">
       <div class="modal-basket__wrapper">
         <h2 class="modal-basket__title">Добавить в корзину</h2>
@@ -348,5 +359,6 @@
       </div>
     </section>
     <script src="js/menu-mobile-btn.js"></script>
+    <script src="js/modal-opened.js"></script>
   </body>
 </html>
