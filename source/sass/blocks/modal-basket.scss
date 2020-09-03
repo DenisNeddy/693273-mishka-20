@@ -16,7 +16,7 @@
 
   box-shadow: 0 5px 10px $modalShadow;
   transform: translate(-50%, -50%);
-  z-index: 99999999;
+  z-index: 11199999999;
 
   @media (min-width: $tablet-width) {
     width: 566px;
@@ -116,32 +116,31 @@
   outline: none;
 
   &:active {
-     border-color: $basicGreen;;
-    }
+    border-color: $basicGreen;
+  }
 
   @media (min-width: $desktop-width) {
-
     &:hover,
     &:focus {
-     border-color: $opacityBlack03;
+      border-color: $opacityBlack03;
     }
 
     &:active {
-     border-color: $basicGreen;;
+      border-color: $basicGreen;
     }
 
-  &--active {
-    border-color: $basicGreen;
+    &--active {
+      border-color: $basicGreen;
+    }
   }
 }
-}
+
 .modal-basket__button {
 
   margin-top: 31px;
   min-width: 90%;
 
   width: 100%;
-
 
   text-align: center;
   color: $basicWhite;
@@ -150,7 +149,7 @@
   border-color: $basicGreen;
 
   &:active {
-     color: $opacityWhite03;
+    color: $opacityWhite03;
   }
 
   @media (min-width: $tablet-width) {
@@ -160,7 +159,7 @@
     }
 
     &:active {
-     color: $opacityWhite03;
+      color: $opacityWhite03;
     }
   }
 
@@ -170,12 +169,10 @@
     &:hover,
     &:focus {
       background-color: $basicGreenDark;
-   }
-
-    &:active {
-     color: $opacityWhite03;
     }
 
+    &:active {
+      color: $opacityWhite03;
+    }
   }
-
 }

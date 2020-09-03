@@ -1,14 +1,16 @@
 .overlay {
-  display: block;
+  display: none;
   position: fixed;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  top: 100%;
 
-  background-color: tomato;
+  background-color: $basicWhite;
+  z-index: 999999998;
+  opacity: 0.9;
 }
 
 .overlay--opened {
   display: block;
-
 }
