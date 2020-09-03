@@ -16,11 +16,15 @@
 
   box-shadow: 0 5px 10px $modalShadow;
   transform: translate(-50%, -50%);
-  z-index: 99999999;
+  z-index: 11199999999;
 
   @media (min-width: $tablet-width) {
     width: 566px;
   }
+}
+
+.modal-basket--opened {
+  display: block;
 }
 
 .modal-basket__wrapper {
@@ -109,9 +113,25 @@
   border: 2px solid $opacityDark01;
 
   cursor: pointer;
+  outline: none;
 
-  &--active {
+  &:active {
     border-color: $basicGreen;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      border-color: $opacityBlack03;
+    }
+
+    &:active {
+      border-color: $basicGreen;
+    }
+
+    &--active {
+      border-color: $basicGreen;
+    }
   }
 }
 
@@ -122,10 +142,37 @@
 
   width: 100%;
 
-
   text-align: center;
   color: $basicWhite;
 
   background-color: $basicGreen;
   border-color: $basicGreen;
+
+  &:active {
+    color: $opacityWhite03;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      background-color: $basicGreenDark;
+    }
+
+    &:active {
+      color: $opacityWhite03;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: $basicGreenDark;
+    }
+
+    &:active {
+      color: $opacityWhite03;
+    }
+  }
 }
