@@ -1,4 +1,3 @@
-
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -93,3 +92,4 @@ const build = gulp.series(clean, copy, styles, images, sprite, html);
 exports.build = build;
 // Start
 exports.start = gulp.series(build, server, watcher);
+exports.default = gulp.series(build, server, watcher);
