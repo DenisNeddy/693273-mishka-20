@@ -74,9 +74,9 @@ exports.images = images;
 
 // webp
 const webp2 = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"))
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
 }
 exports.webp2 = webp2;
 
@@ -121,7 +121,7 @@ const watcher = () => {
 
 // build
 const build = gulp.series(
-  clean, copy, styles, sprite, images, html, js
+  clean, copy, html, styles, sprite, webp2, js
 );
 
 exports.build = build;
