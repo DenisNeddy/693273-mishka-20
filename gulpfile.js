@@ -73,21 +73,12 @@ const images = () => {
 exports.images = images;
 
 // webp
-const webp2 = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
-}
-exports.webp2 = webp2;
-
-// sprite
-const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
-    .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 }
-exports.sprite = sprite;
+exports.webp = createWebp;
 
 //js
 const js = () => {
@@ -97,6 +88,15 @@ return gulp.src("source/js/script.js")
 .pipe(gulp.dest("build/js"))
 }
 exports.js = js;
+
+// sprite
+const sprite = () => {
+  return gulp.src("source/img/**/icon-*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
+}
+exports.sprite = sprite;
 
 // server
 const server = (done) => {
@@ -121,7 +121,7 @@ const watcher = () => {
 
 // build
 const build = gulp.series(
-  clean, copy, html, styles, sprite, webp2, js
+  clean, copy, styles, sprite, images, html, js
 );
 
 exports.build = build;
