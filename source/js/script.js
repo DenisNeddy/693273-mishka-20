@@ -6,6 +6,8 @@ var mainNav = document.querySelector(".main-nav");
 var menuButton = document.querySelector(".main-nav__toggle");
 var innerCartButtonOpen = document.querySelector(".inner-product-cart__buy");
 
+mainNav.classList.remove("main-nav--nojs");
+
 buttonModalOpen.addEventListener('click', function(evt) {
   if (!formModal.classList.contains("modal-basket--opened")) {
     evt.preventDefault();
@@ -21,8 +23,6 @@ buttonModalClose.addEventListener("click", function(evt) {
     bgOverlay.classList.remove("overlay--opened");
   }
 })
-
-mainNav.classList.remove("main-nav--nojs");
 
 menuButton.addEventListener("click", function(evt) {
   evt.preventDefault();

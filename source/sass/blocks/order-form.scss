@@ -508,6 +508,8 @@
   padding-left: 15px;
 
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 
   width: 100%;
   min-height: 143px;
@@ -528,6 +530,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+
     max-height: 144px;
 
     margin-top: 0;
