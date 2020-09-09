@@ -14,7 +14,7 @@ const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 
-// clean
+// сlean
 const clean = () => {
   return del("build");
 }
