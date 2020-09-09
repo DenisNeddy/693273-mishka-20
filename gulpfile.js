@@ -14,7 +14,7 @@ const del = require("del");
 const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 
-// сlean
+// clean
 const clean = () => {
   return del("build");
 }
@@ -50,7 +50,6 @@ const styles = () => {
     .pipe(sync.stream());
 }
 exports.styles = styles;
-
 
 // html
 const html = () => {
