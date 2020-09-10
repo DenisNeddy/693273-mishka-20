@@ -12,16 +12,24 @@
       left: 0;
 
       width: 100%;
-      height: 24px;
+      height: 23px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+      background-position: 0 0;
+      background-size: 100% 24px;
       z-index: 100;
     }
   }
 
   @media (min-width: $desktop-width) {
     background-color: $bgGreyPopular;
+
+    &::before {
+      background-position: 110% 0;
+      background-size: auto 37px;
+      z-index: 100;
+    }
   }
 }
 

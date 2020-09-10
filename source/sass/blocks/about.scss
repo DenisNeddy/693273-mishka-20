@@ -29,7 +29,7 @@
 
       background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: auto 17px;
+      background-size: auto 59%;
     }
   }
 
@@ -37,6 +37,11 @@
     width: 1050px;
     margin: 0 auto;
     background-size: 100%;
+
+    &::before {
+
+      background-size: auto 21px;
+    }
   }
 }
 
@@ -49,7 +54,7 @@
   color: $basicBlack;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 38px;
 
     font-size: 43px;
     line-height: 50px;
@@ -142,7 +147,7 @@
 .about__item-title {
   position: relative;
   margin: 0;
-  padding-top: 84px;
+  padding-top: 83px;
 
   font-size: 17px;
   line-height: 20px;

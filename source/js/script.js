@@ -4,25 +4,11 @@ var bgOverlay = document.querySelector(".overlay");
 var buttonModalClose = document.querySelector(".modal-basket__button");
 var mainNav = document.querySelector(".main-nav");
 var menuButton = document.querySelector(".main-nav__toggle");
-var innerCartButtonOpen = document.querySelector(".inner-product-cart__buy");
+var productButton = document.querySelector(".inner-product-cart__buy");
+
+
 
 mainNav.classList.remove("main-nav--nojs");
-
-buttonModalOpen.addEventListener('click', function(evt) {
-  if (!formModal.classList.contains("modal-basket--opened")) {
-    evt.preventDefault();
-    formModal.classList.add("modal-basket--opened");
-    bgOverlay.classList.add("overlay--opened");
-  }
-})
-
-buttonModalClose.addEventListener("click", function(evt) {
-  if (formModal.classList.contains("modal-basket--opened")) {
-    evt.preventDefault();
-    formModal.classList.remove("modal-basket--opened");
-    bgOverlay.classList.remove("overlay--opened");
-  }
-})
 
 menuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -33,16 +19,37 @@ menuButton.addEventListener("click", function(evt) {
     mainNav.classList.add("main-nav--opened");
   }
   else {
-    mainNav.classList.add("main-nav--closed");
     mainNav.classList.remove("main-nav--opened");
+    mainNav.classList.add("main-nav--closed");
+
   }
 })
 
-innerCartButtonOpen.addEventListener("click", function(evt) {
-  if (!formModal.classList.contains("modal-basket--opened")) {
+
+
+
+buttonModalOpen.addEventListener("click", function(evt) {
     evt.preventDefault();
     formModal.classList.add("modal-basket--opened");
     bgOverlay.classList.add("overlay--opened");
-  }
+
+})
+
+
+buttonModalClose.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    formModal.classList.remove("modal-basket--opened");
+    bgOverlay.classList.remove("overlay--opened");
+
+})
+
+
+
+
+productButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    formModal.classList.add("modal-basket--opened");
+    bgOverlay.classList.add("overlay--opened");
+
 })
 

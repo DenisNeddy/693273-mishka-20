@@ -9,7 +9,13 @@
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
+    padding-top: 30px;
+
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 27px;
 
     border-top: none;
   }
@@ -22,6 +28,15 @@
   line-height: 18px;
   font-weight: 700;
   color: $basicBlack;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    margin-left: 70px;
+  }
+   @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-left: 72px;
+  }
 }
 
 .creators__logo {
