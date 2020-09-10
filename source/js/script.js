@@ -1,10 +1,10 @@
 var formModal = document.querySelector(".modal-basket");
-var buttonModalOpen = document.querySelector(".product-cart__button");
+var buttonModalOpen = document.querySelectorAll(".js-openPopup");
 var bgOverlay = document.querySelector(".overlay");
 var buttonModalClose = document.querySelector(".modal-basket__button");
 var mainNav = document.querySelector(".main-nav");
 var menuButton = document.querySelector(".main-nav__toggle");
-var productButton = document.querySelector(".inner-product-cart__buy");
+
 
 
 
@@ -21,20 +21,20 @@ menuButton.addEventListener("click", function(evt) {
   else {
     mainNav.classList.remove("main-nav--opened");
     mainNav.classList.add("main-nav--closed");
-
   }
 })
 
+buttonModalOpen.forEach(function(item){
 
+  item.addEventListener('click', function(e) {
 
+  e.preventDefault();
 
-buttonModalOpen.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    formModal.classList.add("modal-basket--opened");
-    bgOverlay.classList.add("overlay--opened");
+  formModal.classList.add("modal-basket--opened");
+  bgOverlay.classList.add("overlay--opened");
 
-})
-
+  });
+});
 
 buttonModalClose.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -46,10 +46,9 @@ buttonModalClose.addEventListener("click", function(evt) {
 
 
 
-productButton.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    formModal.classList.add("modal-basket--opened");
-    bgOverlay.classList.add("overlay--opened");
 
-})
+
+
+
+
 

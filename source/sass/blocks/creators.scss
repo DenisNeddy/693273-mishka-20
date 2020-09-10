@@ -44,28 +44,14 @@
 
   fill: $basicGreen;
 
+  &:hover,
+  &:focus {
+    fill: $specialGreenDark;
+    opacity: 1;
+  }
+
   &:active {
     fill: $specialGreenDark;
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:active {
-      fill: $specialGreenDark;
-      opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus {
-      fill: $specialGreenDark;
-      opacity: 1;
-    }
-
-    &:active {
-      fill: $specialGreenDark;
-      opacity: 0.3;
-    }
   }
 }

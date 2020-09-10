@@ -93,24 +93,18 @@
 
   opacity: 0.2;
 
-  &:active {
+  &:hover,
+  &:focus {
     fill: $basicGreen;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus {
-      fill: $basicGreen;
-      opacity: 1;
-    }
-
-    &:active {
-      opacity: 0.2;
-    }
   }
 }
 
@@ -151,45 +145,26 @@
   }
 }
 
-.user-list__link:hover .user-list__basket-icon,
-.user-list__link:focus .user-list__basket-icon {
-  @media (min-width: $desktop-width) {
-    fill: $basicGreen;
-    opacity: 1;
-  }
-}
-
-.user-list__link:active .user-list__basket-icon {
-  @media (min-width: $desktop-width) {
-    fill: $basicGreen;
-    opacity: 0.2;
-  }
-}
-
 .user-list__basket-icon {
   margin-right: 15px;
 
   opacity: 0.2;
 
+  &:hover,
+  &:focus {
+    fill: $basicGreen;
+    opacity: 1;
+  }
+
+  &:active {
+   opacity: 0.2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 26px;
-
-    &:active {
-      opacity: 0.2;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 29px;
-
-    &:hover,
-    &:focus {
-      fill: $basicGreen;
-      opacity: 1;
-    }
-
-    &:active {
-      opacity: 0.2;
-    }
   }
 }

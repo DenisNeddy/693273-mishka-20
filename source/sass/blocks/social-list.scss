@@ -29,29 +29,18 @@
   margin-right: 0;
 }
 
+
 .social__link {
-  fill: $basicBlack;
+  fill: $basicDark;
+
+  &:hover,
+  &:focus {
+      fill: $specialGreenDark;
+
+  }
 
   &:active {
-    fill: $specialGreenDark;
-  }
-
-  @media (min-width: $tablet-width) {
-    &:active {
       fill: $specialGreenDark;
       opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus {
-      fill: $specialGreenDark;
-    }
-
-    &:active {
-      fill: $specialGreenDark;
-      opacity: 0.3;
-    }
   }
 }
