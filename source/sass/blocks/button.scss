@@ -18,7 +18,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-     font-size: 17px;
+    font-size: 17px;
   }
 
   &:hover,
@@ -28,6 +28,7 @@
   }
 
   &:active {
+    background-color: $basicDark;
     color: $opacityWhite03;
   }
 }

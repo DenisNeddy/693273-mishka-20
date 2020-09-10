@@ -30,17 +30,16 @@
 }
 
 
-.social__link {
+.social-list__link {
   fill: $basicDark;
 
   &:hover,
   &:focus {
-      fill: $specialGreenDark;
-
+    fill: $specialGreenDark;
   }
 
   &:active {
-      fill: $specialGreenDark;
-      opacity: 0.3;
+    fill: $specialGreenDark;
+    opacity: 0.3;
   }
 }

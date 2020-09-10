@@ -26,7 +26,7 @@ menuButton.addEventListener("click", function(evt) {
 
 buttonModalOpen.forEach(function(item){
 
-  item.addEventListener('click', function(e) {
+  item.addEventListener("click", function(e) {
 
   e.preventDefault();
 
@@ -40,15 +40,4 @@ buttonModalClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     formModal.classList.remove("modal-basket--opened");
     bgOverlay.classList.remove("overlay--opened");
-
 })
-
-
-
-
-
-
-
-
-
-

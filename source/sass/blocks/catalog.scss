@@ -15,12 +15,16 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: auto 24px;
+      background-size: auto 94%;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 17px;
+
+    &::before {
+      background-size: auto 142%;
+    }
   }
 }
 
@@ -46,25 +50,15 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 48px;
+    margin-right: 47px;
     margin-bottom: 57px;
-
-
-    &:hover,
-    &:focus {
-      box-shadow: 0 6px 10px $shadowCart;
-    }
-
-    &:active {
-      box-shadow: 0 3px 5px $shadowCart;
-    }
   }
 }
 

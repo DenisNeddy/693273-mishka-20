@@ -1,7 +1,5 @@
 .modal-basket {
 
-  /*Временно*/
-
   display: none;
   position: fixed;
   top: 50%;
@@ -115,23 +113,17 @@
   cursor: pointer;
   outline: none;
 
+  &:hover,
+  &:focus {
+    border-color: $opacityBlack03;
+  }
+
   &:active {
     border-color: $basicGreen;
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover,
-    &:focus {
-      border-color: $opacityBlack03;
-    }
-
-    &:active {
-      border-color: $basicGreen;
-    }
-
-    &--active {
-      border-color: $basicGreen;
-    }
+  &--active {
+    border-color: $basicGreen;
   }
 }
 
@@ -148,29 +140,18 @@
   background-color: $basicGreen;
   border-color: $basicGreen;
 
+  &:hover,
+  &:focus {
+    background-color: $basicGreenDark;
+  }
+
   &:active {
     color: $opacityWhite03;
   }
 
+  outline: none;
+
   @media (min-width: $tablet-width) {
-    &:hover,
-    &:focus {
-      background-color: $basicGreenDark;
-    }
-
-    &:active {
-      color: $opacityWhite03;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    outline: none;
-
-    &:hover,
-    &:focus {
-      background-color: $basicGreenDark;
-    }
-
     &:active {
       color: $opacityWhite03;
     }

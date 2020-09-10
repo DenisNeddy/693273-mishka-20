@@ -172,6 +172,11 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -181,10 +186,6 @@
     border: none;
 
     width: auto;
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -192,15 +193,6 @@
     border: none;
 
     width: auto;
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 

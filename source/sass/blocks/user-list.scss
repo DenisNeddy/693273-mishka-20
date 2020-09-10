@@ -150,15 +150,6 @@
 
   opacity: 0.2;
 
-  &:hover,
-  &:focus {
-    fill: $basicGreen;
-    opacity: 1;
-  }
-
-  &:active {
-   opacity: 0.2;
-  }
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
@@ -167,4 +158,14 @@
   @media (min-width: $desktop-width) {
     margin-right: 29px;
   }
+}
+
+.user-list__link:hover .user-list__basket-icon,
+.user-list__link:focus .user-list__basket-icon {
+  fill: $basicGreen;
+  opacity: 1;
+}
+
+.user-list__link:active .user-list__basket-icon {
+  opacity: 0.2;
 }

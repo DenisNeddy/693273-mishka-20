@@ -185,7 +185,7 @@
   }
 }
 
-.about__item-icon--flower {
+.about__item-title--flower {
   padding-right: 65px;
 
   @media (min-width: $tablet-width) {
@@ -193,7 +193,7 @@
   }
 }
 
-.about__item-icon--money {
+.about__item-title--money {
   padding-right: 40px;
 
   @media (min-width: $tablet-width) {
@@ -219,7 +219,7 @@
   }
 }
 
-.about__item-icon--heart {
+.about__item-title--heart {
   padding-right: 55px;
 
   @media (min-width: $tablet-width) {
@@ -249,7 +249,7 @@
   }
 }
 
-.about__item-icon--ball {
+.about__item-title--ball {
   padding-right: 10px;
 
   &::before {
@@ -271,7 +271,7 @@
   }
 }
 
-.about__item-icon--rocket {
+.about__item-title--rocket {
   &::before {
     content: "";
     display: block;
@@ -291,7 +291,7 @@
   }
 }
 
-.about__item-icon--gift {
+.about__item-title--gift {
   padding-right: 10px;
 
   &::before {

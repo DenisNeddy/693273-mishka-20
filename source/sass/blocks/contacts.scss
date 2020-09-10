@@ -234,35 +234,24 @@
 
   border-bottom: 1px solid $basicGreen;
 
+  &:hover,
+  &:focus {
+    color: $basicGreen;
+  }
+
   &:active {
     color: $basicGreen;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $specialGreenDark01;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-
-    &:active {
-      color: $basicGreen;
-      border-bottom: 1px solid transparent;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 40px;
     margin-left: 0;
-
-    &:hover,
-    &:focus {
-      color: $basicGreen;
-    }
-
-
-    &:active {
-      color: $basicGreen;
-      border-bottom: 1px solid transparent;
-    }
   }
 }
 
@@ -299,6 +288,7 @@
     margin-left: auto;
     margin-right: auto;
 
+    font-size: 17px;
     max-width: 230px;
   }
 }

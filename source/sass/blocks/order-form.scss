@@ -200,6 +200,11 @@
     border-radius: 50%;
   }
 
+  &:hover::before,
+  &:focus::before {
+    border-color: $formGreen;
+  }
+
   &:active::before {
     opacity: 0.3;
     border-color: $basicBlack;
@@ -222,23 +227,6 @@
 
       border: 2px solid $basicDark;
       border-radius: 50%;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:hover::before,
-    &:focus::before {
-      border-color: $formGreen;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
     }
   }
 }
@@ -301,6 +289,11 @@
     border: 2px solid $basicDark;
   }
 
+  &:hover::before,
+  &:focus::before {
+    border-color: $formGreen;
+  }
+
   &:active::before {
     opacity: 0.3;
     border-color: $basicBlack;
@@ -322,11 +315,6 @@
 
       border: 2px solid $basicDark;
     }
-
-    &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -344,16 +332,6 @@
       height: 48px;
 
       border: 2px solid $basicDark;
-    }
-
-    &:hover::before,
-    &:focus::before {
-      border-color: $formGreen;
-    }
-
-    &:active::before {
-      opacity: 0.3;
-      border-color: $basicBlack;
     }
   }
 }
@@ -417,6 +395,11 @@
 
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 $basicGreen;
+  }
+
   &:active {
     color: $basicBlack;
     box-shadow: inset 0 -2px 0 $basicGreen;
@@ -434,12 +417,6 @@
     width: 100%;
     padding-left: 19px;
 
-
-    &:active {
-      color: $basicBlack;
-      box-shadow: inset 0 -2px 0 $basicGreen;
-    }
-
     &::placeholder {
       font-size: 19px;
       font-family: inherit;
@@ -452,21 +429,11 @@
     width: 100%;
     padding-left: 19px;
 
-    &:hover,
-    &:focus {
-      box-shadow: inset 0 -2px 0 $basicGreen;
-    }
-
     &::placeholder {
       font-size: 19px;
       font-family: inherit;
       line-height: 18px;
       color: $opacityBlack03;
-    }
-
-    &:active {
-      color: $basicBlack;
-      box-shadow: inset 0 -2px 0 $basicGreen;
     }
   }
 }
@@ -519,6 +486,11 @@
   outline: none;
 
 
+  &:hover,
+  &:focus {
+    border-color: $basicGreen;
+  }
+
   &:active {
     border-color: $basicGreen;
   }
@@ -550,15 +522,6 @@
   @media (min-width: $desktop-width) {
     max-width: 700px;
 
-    &:hover,
-    &:focus {
-      border-color: $basicGreen;
-    }
-
-    &:active {
-      border-color: $basicGreen;
-    }
-
     &::placeholder {
       font-size: 19px;
       font-family: inherit;
@@ -585,6 +548,7 @@
 
 .order-form__button {
   margin-top: 22px;
+  font-size: 17px;
 
   width: 100%;
 

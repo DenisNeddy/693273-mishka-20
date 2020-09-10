@@ -14,7 +14,11 @@
 }
 
 .page-inner__video-content {
-  margin-bottom: 61px;
+  margin-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 103px;
